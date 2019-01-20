@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aeb38a18-76f6-4572-bbe9-12852ec400cb" name="Default Changelist" comment="" />
+    <list default="true" id="aeb38a18-76f6-4572-bbe9-12852ec400cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_chunks/chunk0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_chunks/chunk1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_chunks/chunk2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_chunks/chunk3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_chunks/chunk4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_chunks/chunk5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_chunks/chunk6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_chunks/chunk7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enveloper.py" beforeDir="false" afterPath="$PROJECT_DIR$/enveloper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_words.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/import_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/import_words.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_chunks/chunkmp0.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_chunks/chunkmp1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_chunks/chunkmp2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_chunks/chunkmp3.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_chunks/chunkmp4.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_chunks/chunkmp5.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_chunks/chunkmp6.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.wav" beforeDir="false" afterPath="$PROJECT_DIR$/output.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/1n.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/1n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/2n.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/2n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/3n.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/3n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/4n.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/4n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/5n.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/5n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/6n.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/6n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsSpeech/7n.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/7n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleSounds/wavTest.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleSounds/wavTest2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleSounds/wavTest3.wav" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,62 +86,70 @@
     <session id="-1936584226">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="143" />
-          <entry key="py" value="2955" />
-          <entry key="sh" value="28" />
+          <entry key="py" value="5218" />
+          <entry key="sh" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Python" value="3098" />
+          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="Python" value="5361" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="20" />
-          <entry key="sh" value="1" />
+          <entry key="md" value="1" />
+          <entry key="py" value="44" />
+          <entry key="sh" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="20" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="44" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/enveloper.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_words.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="240">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <marker date="1546510191347" expanded="true" signature="1651:1889" ph="..." />
+                <marker date="1547979664973" expanded="true" signature="1017:1021" ph="..." />
+                <marker date="1547979664973" expanded="true" signature="1040:1609" ph="..." />
+                <marker date="1547979664973" expanded="true" signature="1040:1681" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clean_data.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/import_words.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="276">
+              <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
+              <folding>
+                <element signature="e#1#19#0" expanded="true" />
+                <marker date="1547981944751" expanded="true" signature="1939:2110" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,6 +163,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -122,14 +173,14 @@
         <option value="$PROJECT_DIR$/parseWav.py" />
         <option value="$PROJECT_DIR$/tfParser.py" />
         <option value="$PROJECT_DIR$/compress_words.py" />
-        <option value="$PROJECT_DIR$/get_words.py" />
-        <option value="$PROJECT_DIR$/remove_all.sh" />
-        <option value="$PROJECT_DIR$/import_words.py" />
         <option value="$PROJECT_DIR$/time_to-frequency.py" />
         <option value="$PROJECT_DIR$/hilbert.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/remove_all.sh" />
         <option value="$PROJECT_DIR$/clean_data.py" />
         <option value="$PROJECT_DIR$/enveloper.py" />
+        <option value="$PROJECT_DIR$/get_words.py" />
+        <option value="$PROJECT_DIR$/import_words.py" />
       </list>
     </option>
   </component>
@@ -139,6 +190,7 @@
     <option name="width" value="1400" />
     <option name="height" value="833" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -182,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.enveloper">
+  <component name="RunManager" selected="Python.import_words">
     <configuration name="clean_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project_speech" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -225,7 +277,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hilbert" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="get_words" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project_speech" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,7 +289,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hilbert.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_words.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -290,18 +342,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.enveloper" />
-      <item itemvalue="Python.hilbert" />
-      <item itemvalue="Python.import_words" />
       <item itemvalue="Python.clean_data" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.get_words" />
+      <item itemvalue="Python.import_words" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.enveloper" />
-        <item itemvalue="Python.clean_data" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.hilbert" />
         <item itemvalue="Python.import_words" />
+        <item itemvalue="Python.get_words" />
+        <item itemvalue="Python.clean_data" />
+        <item itemvalue="Python.enveloper" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -320,18 +372,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="833" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32928476" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928476" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32928476" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994602" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32928476" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32928476" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32928476" />
@@ -339,6 +392,32 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -353,81 +432,62 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/all_chunks/compress_words.py" />
-    <entry file="file://$PROJECT_DIR$/parseWav.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="103" column="24" lean-forward="true" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/compress_words.py" />
-    <entry file="file://$PROJECT_DIR$/tfParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/time_to-frequency.py" />
-    <entry file="file://$PROJECT_DIR$/time_to_freq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/remove_all.sh" />
+    <entry file="file://$PROJECT_DIR$/parseWav.py" />
+    <entry file="file://$PROJECT_DIR$/tfParser.py" />
+    <entry file="file://$PROJECT_DIR$/hilbert.py" />
+    <entry file="file://$PROJECT_DIR$/time_to_freq.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/remove_all.sh">
+    <entry file="file://$PROJECT_DIR$/enveloper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hilbert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="420">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1547977961962" expanded="true" signature="1343:1580" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clean_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="420">
+          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enveloper.py">
+    <entry file="file://$PROJECT_DIR$/get_words.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        <state relative-caret-position="240">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1546510191347" expanded="true" signature="1651:1889" ph="..." />
+            <marker date="1547979664973" expanded="true" signature="1017:1021" ph="..." />
+            <marker date="1547979664973" expanded="true" signature="1040:1609" ph="..." />
+            <marker date="1547979664973" expanded="true" signature="1040:1681" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+            <marker date="1547981944751" expanded="true" signature="1939:2110" ph="..." />
           </folding>
         </state>
       </provider>

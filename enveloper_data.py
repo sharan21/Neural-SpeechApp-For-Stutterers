@@ -1,7 +1,6 @@
 from import_words import *
 import numpy as np
 from clean_data import reduceDensity
-from time_to_freq import *
 
 delta = 0.7  # percentage
 numberOfFiles = 4
@@ -29,16 +28,6 @@ def deltaEnv(delta,numberOfFiles,soundData):
 
     return soundData
 
-def test():
-
-    deltaEnv(delta,numberOfFiles,soundData)
-    plotAll(soundData)
-
-def test2():
-
-    for i in range(numberOfFiles-1):
-        for j in range(0, soundData[i].size, 10):
-            print soundData[i][j]
 
 
 def rcEnv(dischargeRate, numberOffiles, soundData):  # RC circuit, to envelope the signal
@@ -58,11 +47,6 @@ def rcEnv(dischargeRate, numberOffiles, soundData):  # RC circuit, to envelope t
     print("done enveloping the samples according to RC law")
     return soundData
 
-def localMinimaFinder():
-    print("finding local minima...")
-
-
-
 def trimmer(soundData):
 
     for i in range(numberOfFiles-1):
@@ -76,18 +60,7 @@ def trimmer(soundData):
 
 
 
-
 #MAIN FUNCTION
 
 soundData = importAll(numberOfFiles)
-cleanSoundData = reduceDensity(soundData)
-newSoundData = deltaEnv(delta, numberOfFiles, cleanSoundData)
-# newSoundData = trimmer(newSoundData)
 
-plotAll(newSoundData,numberOfFiles)
-
-
-
-# newSoundData = rcEnv(dischargeRate, numberOfFiles, soundData)
-
-# plotAll(newSoundData,numberOfFiles)
