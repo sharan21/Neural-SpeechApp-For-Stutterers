@@ -1,5 +1,7 @@
 # Speech-Assisting-App (Ongoing)
 Monitors speech in real time and provides feedback to stammerer, based on features like Vocal modulation, length, rhythm. Trained using Tensorflow. 
+# Refer Report 
+Speech-Assisting-App/Documentation/project-synopsis.pdf 
 
 # Idea and Working
 Based on a technique used to attain fluency in stressfull situations called the "Long lengthning style", developed by Partha Bagchi, a mentor of mine and speech pathologist.
