@@ -1,11 +1,12 @@
-from import_words import importAll, plotAll
+from import_words import *
 import numpy as np
 
 
+betaForExponentialAverage = 0.8
+# use b = 0 to mirror the original data
+# as beta increases, oscillations decrease
 
-numberOfFiles = 4  #for now plotAll can only plot 4 subplots
 
-betaForExponentialAverage = 0.98 # use b = 0 to mirror the original data
 
 
 def reduceDensity(soundDataHere):
@@ -28,7 +29,7 @@ def reduceDensity(soundDataHere):
 
 
 
-def weightedAverage(soundDataHere, beta): # as beta increases, oscillations decrease
+def weightedAverage(soundDataHere, beta):
 
     # newData[i] = beta*newData[i-1] + (1-beta)*soundData[i]
 
@@ -59,11 +60,16 @@ def weightedAverage(soundDataHere, beta): # as beta increases, oscillations decr
 
 # MAIN
 
+numberOfFiles = 4
 soundData = importAll(numberOfFiles)
+
+
 soundData = reduceDensity(soundData)
+
+plotAllMaxFour(soundData,numberOfFiles)
 soundData = weightedAverage(soundData, betaForExponentialAverage)
 
-plotAll(soundData, numberOfFiles)
+plotAllMaxFour(soundData, numberOfFiles)
 
 
 

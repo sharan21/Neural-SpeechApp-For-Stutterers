@@ -9,7 +9,7 @@ CHANNELS = 1
 RATE = 44100
 frames = []
 p = pyaudio.PyAudio()
-RECORD_SECONDS = 10
+RECORD_SECONDS = 5
 
 WAVE_OUTPUT_FILENAME = "output.wav"
 
@@ -50,11 +50,13 @@ def splitWavFile(): # run this after output.wav is obtained
 
     line = AudioSegment.from_wav(WAVE_OUTPUT_FILENAME)
 
-    audio_chunks = split_on_silence(line, min_silence_len=100, silence_thresh=-40)  # isolation of words is done here
+    audio_chunks = split_on_silence(line, min_silence_len=30, silence_thresh=-40)  # isolation of words is done here
 
     # next step is to name and export all the chunks, into ./all_chunks
 
     for i, chunk in enumerate(audio_chunks):
+
+
         out_file = "./all_chunks/chunk{0}.wav".format(i)
         print ("exporting", out_file)
         chunk.export(out_file, format="wav")
@@ -64,13 +66,14 @@ def splitWavFile(): # run this after output.wav is obtained
 
     return i+1
 
-
+def checkChunk(): # check if the chunk is valid or not, and contains the whole word
+    print("")
 
 # MAIN
 
-startRecording()
-storeWavFile()
-splitWavFile()
+#startRecording()
+#storeWavFile()
+#splitWavFile()
     
     
     

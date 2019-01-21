@@ -80,8 +80,9 @@ def plotAll(soundDataHere, numberOfFilesHere):
     print("plotting all the samples")
     for i in range(numberOfFilesHere):
         plt.plot(soundDataHere[i])
+        plt.show()
 
-    plt.show()
+
     print("done plotting samples...")
 
 
@@ -89,11 +90,11 @@ def plotAll(soundDataHere, numberOfFilesHere):
 
 # MAIN
 
-numberOfFiles = getNumberOfFiles()
+#numberOfFiles = getNumberOfFiles()
 
-soundData = importAll(numberOfFiles) # function to import all the chunks
+#soundData = importAll(numberOfFiles) # function to import all the chunks
 
-plotAll(soundData, numberOfFiles)
+# plotAll(soundData, numberOfFiles)
 
 # convertToMp3()
 

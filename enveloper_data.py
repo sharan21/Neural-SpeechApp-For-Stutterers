@@ -54,7 +54,7 @@ def trimmer(soundData):
 
         for j in range(soundData[i].size-1):
             if(soundData[i][j]<=threshHold):
-                soundData[i][j]=0;
+                soundData[i][j] = 0
 
     return soundData
 
