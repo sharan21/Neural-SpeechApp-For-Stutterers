@@ -47,16 +47,7 @@ def rcEnv(dischargeRate, numberOffiles, soundData):  # RC circuit, to envelope t
     print("done enveloping the samples according to RC law")
     return soundData
 
-def trimmer(soundData):
 
-    for i in range(numberOfFiles-1):
-        threshHold = np.amax(soundData[i]) / 2
-
-        for j in range(soundData[i].size-1):
-            if(soundData[i][j]<=threshHold):
-                soundData[i][j] = 0
-
-    return soundData
 
 
 

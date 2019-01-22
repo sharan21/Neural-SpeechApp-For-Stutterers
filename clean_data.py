@@ -6,6 +6,10 @@ betaForExponentialAverage = 0.8
 # use b = 0 to mirror the original data
 # as beta increases, oscillations decrease
 
+fixedChunkSize = 200
+# each word chunk has a fixed size to feed into the tf graph
+
+densityOfChunk = 100
 
 
 
@@ -18,7 +22,7 @@ def reduceDensity(soundDataHere):
         k = 0
         bufferForCleaning = []
 
-        for j in range(0, soundDataHere[i].size-1, 300):
+        for j in range(0, soundDataHere[i].size-1, densityOfChunk):
 
             bufferForCleaning.insert(k, soundDataHere[i][j])
             k += 1
@@ -55,22 +59,66 @@ def weightedAverage(soundDataHere, beta):
 
     return newSoundData
 
+def trimChunks(soundData, fixedSize): # trim the chunk to get fixed size
+
+    print("trimming all the chunks...")
+
+    for i in range(numberOfFiles):
+
+        diffInSize = soundData[i].size - fixedSize
+
+        if soundData[i].size % 2 == 0:
+            temporaryBuffer = np.split(soundData[i], [diffInSize/2, soundData[i].size-diffInSize/2])
+        else:
+            temporaryBuffer = np.split(soundData[i], [diffInSize / 2, soundData[i].size - 1 - diffInSize / 2])
+
+        soundData[i] = temporaryBuffer[1] # take the middle slice of the split soundData array
+
+
+    return soundData
+
+def assertConstantChunkSize(soundData):
+    print("asserting that all the chunks are of constant size...")
+    size = soundData[0].size
+    status = 1
+    for i in range(1,numberOfFiles,1):
+        if soundData[i].size != soundData[i-1].size:
+            status = 0
+
+
+
+    if status == 1:
+        print("Done checking...: same size")
+    else:
+        print("Done checking...: non constant size")
+
+
+def printChunkSizeDiff(soundData, fixedSize):
+
+    for i in range(numberOfFiles):
+        diffInSize = fixedSize - soundData[i].size
+        print("difference in size for chunk{}: is {}".format(i, diffInSize))
+
+
+
+
 
 
 
 # MAIN
 
 numberOfFiles = 4
-soundData = importAll(numberOfFiles)
+# this function is required all codes to get the number of files
 
+soundData = importAll(numberOfFiles)
 
 soundData = reduceDensity(soundData)
 
-plotAllMaxFour(soundData,numberOfFiles)
 soundData = weightedAverage(soundData, betaForExponentialAverage)
 
-plotAllMaxFour(soundData, numberOfFiles)
+trimChunks(soundData, fixedChunkSize)
 
+assertConstantChunkSize(soundData)
 
 
 

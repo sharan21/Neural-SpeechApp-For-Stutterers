@@ -9,7 +9,8 @@ CHANNELS = 1
 RATE = 44100
 frames = []
 p = pyaudio.PyAudio()
-RECORD_SECONDS = 5
+RECORD_SECONDS = 10
+minimumWordSize = 350 # if the size of the word is <= this, reject the chunk
 
 WAVE_OUTPUT_FILENAME = "output.wav"
 
@@ -50,14 +51,21 @@ def splitWavFile(): # run this after output.wav is obtained
 
     line = AudioSegment.from_wav(WAVE_OUTPUT_FILENAME)
 
-    audio_chunks = split_on_silence(line, min_silence_len=30, silence_thresh=-40)  # isolation of words is done here
+    audio_chunks = split_on_silence(line, min_silence_len=150, silence_thresh=-30)  # isolation of words is done here
 
     # next step is to name and export all the chunks, into ./all_chunks
 
-    for i, chunk in enumerate(audio_chunks):
+    temp = 0
 
 
-        out_file = "./all_chunks/chunk{0}.wav".format(i)
+    for i, chunk in enumerate(audio_chunks): # audio_chunks is a python list
+
+        if(checkChunk(chunk,i, minimumWordSize)): #
+            temp = temp + 1
+            continue
+
+        out_file = "./all_chunks/chunk{0}.wav".format(i-temp)
+        print("size of chunk{}: {} ".format(i, len(chunk)))
         print ("exporting", out_file)
         chunk.export(out_file, format="wav")
         print("done exporting...")
@@ -66,14 +74,20 @@ def splitWavFile(): # run this after output.wav is obtained
 
     return i+1
 
-def checkChunk(): # check if the chunk is valid or not, and contains the whole word
-    print("")
+def checkChunk(chunk, i, minimumWordSize): # check if the chunk is valid or not, according to size of chunk
+
+    if(len(chunk) <= minimumWordSize):
+        print("rejected chunk{}".format(i))
+
+    return len(chunk) <= minimumWordSize
+
+
 
 # MAIN
 
-#startRecording()
-#storeWavFile()
-#splitWavFile()
+startRecording()
+storeWavFile()
+splitWavFile()
     
     
     
