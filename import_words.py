@@ -88,15 +88,14 @@ def plotAll(soundDataHere, numberOfFilesHere):
 
 
 
-# MAIN
+if __name__ == '__main__':
+    numberOfFiles = getNumberOfFiles()
 
-#numberOfFiles = getNumberOfFiles()
+    soundData = importAll(numberOfFiles) # function to import all the chunks
 
-#soundData = importAll(numberOfFiles) # function to import all the chunks
+    plotAll(soundData, numberOfFiles)
 
-# plotAll(soundData, numberOfFiles)
-
-# convertToMp3()
+    # convertToMp3()
 
 
 

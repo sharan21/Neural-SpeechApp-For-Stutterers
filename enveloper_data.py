@@ -51,7 +51,5 @@ def rcEnv(dischargeRate, numberOffiles, soundData):  # RC circuit, to envelope t
 
 
 
-#MAIN FUNCTION
 
-soundData = importAll(numberOfFiles)
 

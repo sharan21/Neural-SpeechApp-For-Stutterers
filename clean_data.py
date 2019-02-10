@@ -78,14 +78,13 @@ def trimChunks(soundData, fixedSize): # trim the chunk to get fixed size
     return soundData
 
 def assertConstantChunkSize(soundData):
+
     print("asserting that all the chunks are of constant size...")
     size = soundData[0].size
     status = 1
     for i in range(1,numberOfFiles,1):
         if soundData[i].size != soundData[i-1].size:
             status = 0
-
-
 
     if status == 1:
         print("Done checking...: same size")
@@ -105,22 +104,21 @@ def printChunkSizeDiff(soundData, fixedSize):
 
 
 
-# MAIN
+if __name__ == "__main__":
+    numberOfFiles = 4
 
-numberOfFiles = 4
-# this function is required all codes to get the number of files
+    soundData = importAll(numberOfFiles)
 
-soundData = importAll(numberOfFiles)
+    soundData = reduceDensity(soundData)
 
-soundData = reduceDensity(soundData)
+    soundData = weightedAverage(soundData, betaForExponentialAverage)
 
-soundData = weightedAverage(soundData, betaForExponentialAverage)
+    trimChunks(soundData, fixedChunkSize)
 
-trimChunks(soundData, fixedChunkSize)
+    assertConstantChunkSize(soundData)
 
-assertConstantChunkSize(soundData)
+    plotAllMaxFour(soundData, numberOfFiles)
 
-# testing the push function
 
 
 

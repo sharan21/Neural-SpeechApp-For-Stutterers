@@ -51,7 +51,7 @@ def splitWavFile(): # run this after output.wav is obtained
 
     line = AudioSegment.from_wav(WAVE_OUTPUT_FILENAME)
 
-    audio_chunks = split_on_silence(line, min_silence_len=150, silence_thresh=-30)  # isolation of words is done here
+    audio_chunks = split_on_silence(line, min_silence_len=50, silence_thresh=-30)  # isolation of words is done here
 
     # next step is to name and export all the chunks, into ./all_chunks
 
@@ -83,11 +83,10 @@ def checkChunk(chunk, i, minimumWordSize): # check if the chunk is valid or not,
 
 
 
-# MAIN
-
-startRecording()
-storeWavFile()
-splitWavFile()
+if __name__ == '__main__':
+    startRecording()
+    storeWavFile()
+    splitWavFile()
     
     
     
