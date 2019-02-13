@@ -10,9 +10,9 @@ RATE = 44100
 frames = []
 p = pyaudio.PyAudio()
 RECORD_SECONDS = 10
-minimumWordSize = 350 # if the size of the word is <= this, reject the chunk
+minimumWordSize = 200 # if the size of the word is <= this, reject the chunk
 
-WAVE_OUTPUT_FILENAME = "output.wav"
+WAVE_OUTPUT_FILENAME = "output2.wav"
 
 
 def startRecording():
@@ -51,7 +51,7 @@ def splitWavFile(): # run this after output.wav is obtained
 
     line = AudioSegment.from_wav(WAVE_OUTPUT_FILENAME)
 
-    audio_chunks = split_on_silence(line, min_silence_len=50, silence_thresh=-30)  # isolation of words is done here
+    audio_chunks = split_on_silence(line, min_silence_len=60, silence_thresh=-30)  # isolation of words is done here
 
     # next step is to name and export all the chunks, into ./all_chunks
 
@@ -64,7 +64,7 @@ def splitWavFile(): # run this after output.wav is obtained
             temp = temp + 1
             continue
 
-        out_file = "./all_chunks/chunk{0}.wav".format(i-temp)
+        out_file = "./nonLL_chunks/chunk{0}.wav".format(i-temp)
         print("size of chunk{}: {} ".format(i, len(chunk)))
         print ("exporting", out_file)
         chunk.export(out_file, format="wav")
@@ -80,7 +80,6 @@ def checkChunk(chunk, i, minimumWordSize): # check if the chunk is valid or not,
         print("rejected chunk{}".format(i))
 
     return len(chunk) <= minimumWordSize
-
 
 
 if __name__ == '__main__':

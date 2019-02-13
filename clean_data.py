@@ -38,6 +38,7 @@ def weightedAverage(soundDataHere, beta):
     # newData[i] = beta*newData[i-1] + (1-beta)*soundData[i]
 
     print("Finding the weighted exponential average...")
+    print
 
     newSoundData = []
 
@@ -62,6 +63,7 @@ def weightedAverage(soundDataHere, beta):
 def trimChunks(soundData, fixedSize): # trim the chunk to get fixed size
 
     print("trimming all the chunks...")
+    print
 
     for i in range(numberOfFiles):
 
@@ -80,6 +82,7 @@ def trimChunks(soundData, fixedSize): # trim the chunk to get fixed size
 def assertConstantChunkSize(soundData):
 
     print("asserting that all the chunks are of constant size...")
+    print
     size = soundData[0].size
     status = 1
     for i in range(1,numberOfFiles,1):
