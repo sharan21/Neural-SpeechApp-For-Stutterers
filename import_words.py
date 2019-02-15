@@ -24,13 +24,24 @@ outFileWav = [] # wav file chunks
 outFileMp3 = [] # mp3 file chunks
 
 
-def getNumberOfFiles():
-    list = os.listdir('./all_chunks')  # dir is your directory path
+def getNumberOfFiles(path = './LL_chunks'):
+    list = os.listdir(path)  # dir is your directory path
     number_files = len(list)
 
-    print ("Number of Files found in all_chunks:", number_files-1)
+    # print ("Number of Files found in all_chunks:", number_files-1)
 
-    return number_files-1
+    return number_files
+
+
+
+def getNumberOfSentences(path = './LL-sentences'):
+
+    list = os.listdir(path)  # dir is your directory path
+    number_files = len(list)
+
+    # print ("Number of sentences found in sentences directory:", number_files - 1)
+
+    return number_files
 
 
 def convertToMp3(numberOfFilesHere): # run only after you get all the wav chunks in all_chunks
@@ -45,7 +56,7 @@ def importAll(numberOfFilesHere):
     print("assigning names of samples")
     outFile, outFileMpthree = nameAll(numberOfFilesHere)
 
-    for i in range(numberOfFilesHere):
+    for i in range(numberOfFilesHere-1):
 
         # get names of all the samples in the form of "outfile"
 
@@ -58,11 +69,11 @@ def importAll(numberOfFilesHere):
 
 def nameAll(numberOfFilesHere): # gets list of file names for wav and mp3 to export later
 
-    for i in range(numberOfFilesHere):
-        outFileWav.append("./all_chunks/chunk{0}.wav".format(i))
+    for i in range(numberOfFilesHere-1):
+        outFileWav.append("./LL_chunks/chunk{0}.wav".format(i))
         print(outFileWav[i])
 
-    for i in range(numberOfFilesHere):
+    for i in range(numberOfFilesHere-1):
         outFileMp3.append("./mp3_chunks/chunk{0}.mp3".format(i))
 
 
@@ -76,7 +87,7 @@ def nameAll(numberOfFilesHere): # gets list of file names for wav and mp3 to exp
 def plotAllMaxFour(soundData, numberOfFilesHere): # for max 4 plots
 
     print("plotting all the samples")
-    for i in range(numberOfFilesHere):
+    for i in range(numberOfFilesHere-1):
 
         plt.subplot(221+i)
         plt.plot(soundData[i])
@@ -88,7 +99,7 @@ def plotAllMaxFour(soundData, numberOfFilesHere): # for max 4 plots
 def plotAll(soundDataHere, numberOfFilesHere):
 
     print("plotting all the samples")
-    for i in range(numberOfFilesHere):
+    for i in range(numberOfFilesHere-1):
         plt.plot(soundDataHere[i])
         plt.show()
 
@@ -99,11 +110,13 @@ def plotAll(soundDataHere, numberOfFilesHere):
 
 
 if __name__ == '__main__':
-    numberOfFiles = getNumberOfFiles()
 
-    soundData = importAll(numberOfFiles) # function to import all the chunks
+    print getNumberOfSentences('./train-data')
+    # numberOfFiles = getNumberOfFiles()
 
-    plotAll(soundData, numberOfFiles)
+    # soundData = importAll(numberOfFiles) # function to import all the chunks
+
+    # plotAll(soundData, numberOfFiles)
 
     # convertToMp3()
 

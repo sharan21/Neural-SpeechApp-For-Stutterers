@@ -21,7 +21,7 @@ def normalizeSoundData(soundDataHere, numberOfFilesHere): # takes numpy array an
 
 
 if __name__ == '__main__':
-    numberOfFiles = getNumberOfFiles() # gets the number of files according to the all_chunks dir
+    numberOfFiles = getNumberOfFiles() # gets the number of files according to the LL_chunks dir
     print(numberOfFiles)
     soundData = importAll(numberOfFiles)
     normalizeSoundData(soundData, numberOfFiles)

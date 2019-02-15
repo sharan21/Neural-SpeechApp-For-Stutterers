@@ -25,7 +25,7 @@ def reduceDensity(soundDataHere):
 
     cleanSoundData = []
 
-    for i in range(numberOfFiles):
+    for i in range(len(soundDataHere)):
 
         k = 0
         bufferForCleaning = []
@@ -41,7 +41,7 @@ def reduceDensity(soundDataHere):
 
 
 
-def weightedAverage(soundDataHere, beta):
+def weightedAverage(soundDataHere, beta = betaForExponentialAverage):
 
     # newData[i] = beta*newData[i-1] + (1-beta)*soundData[i]
 
@@ -50,7 +50,7 @@ def weightedAverage(soundDataHere, beta):
 
     newSoundData = []
 
-    for i in range(numberOfFiles):
+    for i in range(len(soundDataHere)):
 
         bufferHere = []
 
@@ -68,12 +68,12 @@ def weightedAverage(soundDataHere, beta):
 
     return newSoundData
 
-def trimChunks(soundData, fixedSize): # trim the chunk to get fixed size
+def trimChunks(soundData, fixedSize = 200): # trim the chunk to get fixed size
 
     print("trimming all the chunks...")
     print
 
-    for i in range(numberOfFiles):
+    for i in range(len(soundData)):
 
         diffInSize = soundData[i].size - fixedSize
 
@@ -103,7 +103,7 @@ def assertConstantChunkSize(soundData):
         print("Done checking...: non constant size")
 
 
-def printChunkSizeDiff(soundData, fixedSize):
+def printChunkSizeDiff(soundData, fixedSize = 200):
 
     for i in range(numberOfFiles):
         diffInSize = fixedSize - soundData[i].size
