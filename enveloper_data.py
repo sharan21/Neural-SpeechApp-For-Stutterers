@@ -1,6 +1,11 @@
+'''
+Not currently in used in Pipeline. Will be implemented in the future to further smoothen the spectral envelope
+
+'''
+
 from import_words import *
 import numpy as np
-from clean_data import reduceDensity
+
 
 delta = 0.7  # percentage
 numberOfFiles = 4

@@ -2,6 +2,7 @@ import pyaudio
 import wave
 from pydub import AudioSegment
 from pydub.silence import split_on_silence
+from import_words import getNumberOfFiles
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
@@ -12,7 +13,9 @@ p = pyaudio.PyAudio()
 RECORD_SECONDS = 10
 minimumWordSize = 200 # if the size of the word is <= this, reject the chunk
 
-WAVE_OUTPUT_FILENAME = "output2.wav"
+countOffset = getNumberOfFiles() # makes sure that old chunks are not re-written
+
+WAVE_OUTPUT_FILENAME = "LL-sentences/output.wav"
 
 
 def startRecording():
@@ -47,7 +50,7 @@ def storeWavFile():
 
 
 
-def splitWavFile(): # run this after output.wav is obtained
+def splitWavFileAndStore(): # run this after output.wav is obtained
 
     line = AudioSegment.from_wav(WAVE_OUTPUT_FILENAME)
 
@@ -61,11 +64,11 @@ def splitWavFile(): # run this after output.wav is obtained
     for i, chunk in enumerate(audio_chunks): # audio_chunks is a python list
 
         if(checkChunk(chunk,i, minimumWordSize)): #
-            temp = temp + 1
+            rejectedOffset = rejectedOffset + 1
             continue
 
-        out_file = "./nonLL_chunks/chunk{0}.wav".format(i-temp)
-        print("size of chunk{}: {} ".format(i, len(chunk)))
+        out_file = "./nonLL_chunks/chunk{0}.wav".format(i-rejectedOffset+countOffset)
+        print("size of chunk{}: {} ".format(i-rejectedOffset+countOffset, len(chunk)))
         print ("exporting", out_file)
         chunk.export(out_file, format="wav")
         print("done exporting...")
@@ -85,7 +88,7 @@ def checkChunk(chunk, i, minimumWordSize): # check if the chunk is valid or not,
 if __name__ == '__main__':
     startRecording()
     storeWavFile()
-    splitWavFile()
+    splitWavFileAndStore()
     
     
     

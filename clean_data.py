@@ -1,3 +1,11 @@
+'''
+
+Cleans the data by reducing it density, and trims each word to constant size
+Also implements exponential weighted average to smoothen the data.
+
+
+'''
+
 from import_words import *
 import numpy as np
 

@@ -1,4 +1,12 @@
 
+
+'''
+
+After using get_words.
+Imports the wave word chunks from all_chunks as a numpy arrays, according to numberOfFiles,
+stores as 'soundData' variable for pre-processing and feature extraction.
+
+'''
 import numpy as np
 from scipy.io.wavfile import read
 from matplotlib import pyplot as plt
@@ -10,6 +18,7 @@ import os
 rateList = []
 dataList = []
 soundData = []
+
 
 outFileWav = [] # wav file chunks
 outFileMp3 = [] # mp3 file chunks
@@ -48,6 +57,7 @@ def importAll(numberOfFilesHere):
 
 
 def nameAll(numberOfFilesHere): # gets list of file names for wav and mp3 to export later
+
     for i in range(numberOfFilesHere):
         outFileWav.append("./all_chunks/chunk{0}.wav".format(i))
         print(outFileWav[i])
