@@ -1,12 +1,14 @@
 
-
 '''
 
 After using get_words.
-Imports the wave word chunks from all_chunks as a numpy arrays, according to numberOfFiles,
+Imports the wave word chunks from dir as a np arrays, and creates labels, according to numberOfFiles,
 stores as 'soundData' variable for pre-processing and feature extraction.
 
+Also has function to shuffle soundData in unison with its label
+
 '''
+
 import numpy as np
 from scipy.io.wavfile import read
 from matplotlib import pyplot as plt
@@ -51,7 +53,7 @@ def convertToMp3(numberOfFilesHere): # run only after you get all the wav chunks
         AudioSegment.from_wav(outFile[i]).export(outFileMp[i], format="mp3")
 
 
-def importAll(numberOfFilesHere):
+def importAll(numberOfFilesHere): # default is path = ./LL_chunks
 
     print("assigning names of samples")
     outFile, outFileMpthree = nameAll(numberOfFilesHere)
@@ -65,6 +67,41 @@ def importAll(numberOfFilesHere):
         dataList.append(rate)
         soundData.append(np.absolute(data))  # diode full wave rectification is done here
     return soundData
+
+def importAllFromDir(path): # better import function to import them all
+
+
+
+    list = os.listdir(path)
+    print ("There are {} chunks in directory {}".format(len(list)-1, path))
+
+    if '.DS_Store' in enumerate(list):
+        list.remove('.DS_Store')
+
+    print ("importing all of them...")
+
+    if path == './LL_chunks':
+        labels = np.ones((len(list), 1))
+    else:
+        labels = np.zeros((len(list), 1))
+
+
+    soundData = []
+
+    for i in range(len(list)):
+
+        # get names of all the samples in the form of "outfile"
+
+        rate, data = scipy.io.wavfile.read(path+'/'+list[i])
+        rateList.append(rate)
+        dataList.append(rate)
+        soundData.append(np.absolute(data))
+        print("imported {}".format(list[i]))
+
+    return soundData, labels
+
+
+
 
 
 def nameAll(numberOfFilesHere): # gets list of file names for wav and mp3 to export later
@@ -105,16 +142,31 @@ def plotAll(soundDataHere, numberOfFilesHere):
 
 
     print("done plotting samples...")
+    
+def shuffle_in_unison_scary(soundDataHere, labels):
+    rng_state = np.random.get_state()
+    np.random.shuffle(soundDataHere)
+    np.random.set_state(rng_state)
+    np.random.shuffle(labels)
 
 
 
 
 if __name__ == '__main__':
 
-    print getNumberOfSentences('./train-data')
+    soundData, labels = importAllFromDir('./nonLL_chunks')
+
+    plotAll(soundData, getNumberOfFiles())
+
+    print labels
+
+    # print getNumberOfSentences('./train-data')
+
     # numberOfFiles = getNumberOfFiles()
 
     # soundData = importAll(numberOfFiles) # function to import all the chunks
+
+    # shuffle_in_unison_scary(soundData)
 
     # plotAll(soundData, numberOfFiles)
 

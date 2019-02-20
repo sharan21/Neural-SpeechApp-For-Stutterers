@@ -9,10 +9,10 @@ Only implemented for single path, single MFCC extraction and does not automatica
 import numpy
 import scipy.io.wavfile
 from scipy.fftpack import dct
-from matplotlib import pyplot as plt
-import librosa
 import matplotlib.pyplot as plt
 from dtw import dtw
+import librosa.display
+from numpy.linalg import norm
 
 pre_emphasis = 0.97
 frame_size = 0.025
@@ -21,9 +21,27 @@ NFFT = 512
 nfilt = 40
 num_ceps = 12
 cep_lifter = 22 # 0 for no filter
-nonllpath = './nonLL_chunks/chunk0.wav'
-llpath = './all_chunks/chunk0.wav'
+nonllpath = './LL_chunks/chunk0.wav'
+llpath = './nonLL_chunks/chunk0.wav'
 
+
+def librosaMFCC(nonllpath, llpath):
+    print ('Calculoating both the MFCC')
+    y1, sr1 = librosa.load(nonllpath)
+    y2, sr2 = librosa.load(llpath)
+
+    mfcc1 = librosa.feature.mfcc(y1, sr1)
+    mfcc2 = librosa.feature.mfcc(y2, sr2)
+
+    return mfcc1, mfcc2
+
+def plotMfcc(mfcc1, mfcc2):
+
+    plt.subplot(1, 2, 1)
+    librosa.display.specshow(mfcc1)
+    plt.subplot(1, 2, 2)
+    librosa.display.specshow(mfcc2)
+    plt.show()
 
 
 def findMfcc(path):
@@ -77,11 +95,7 @@ def findMfcc(path):
     (nframes, ncoeff) = mfcc.shape
     n = numpy.arange(ncoeff)
     lift = 1 + (cep_lifter / 2) * numpy.sin(numpy.pi * n / cep_lifter)
-    mfcc *= lift  #*
-
-    plt.plot(mfcc)
-    plt.show()
-    print("plotted.")
+    mfcc *= lift
 
     filter_banks -= (numpy.mean(filter_banks, axis=0) + 1e-8)
 
@@ -89,22 +103,26 @@ def findMfcc(path):
 
     return mfcc
 
+
+
 def computeDistace(mfcc1, mfcc2):
 
-    print("finding the similarity between the 2 mfccs")
-
-    dist, cost = dtw(mfcc1.T, mfcc2.T)
-    print("The normalized distance between the two : ", dist)  # 0 for similar audios
-
+    print("Finding DTW between the 2 mfccs")
+    dist, cost, acc_cost, path = dtw(mfcc1.T, mfcc2.T, dist=lambda x, y: norm(x - y, ord=1))
+    print 'Normalized distance between the two sounds:', dist
     plt.imshow(cost.T, origin='lower', cmap=plt.get_cmap('gray'), interpolation='nearest')
-    plt.plot(path[0], path[1], 'w')  # creating plot for DTW
+    plt.plot(path[0], path[1], 'w')
+    plt.xlim((-0.5, cost.shape[0] - 0.5))
+    plt.ylim((-0.5, cost.shape[1] - 0.5))
+    plt.show()
 
-    plt.show()  # To display the plots graphically
+
 
 
 if __name__ == '__main__':
-    llmfcc = findMfcc(llpath)
-    nonllmfcc = findMfcc(nonllpath)
-    # computeDistace(llmfcc, nonllmfcc)
 
+
+    nonllmfcc, llmfcc = librosaMFCC(nonllpath, llpath)
+    plotMfcc(nonllmfcc, llmfcc)
+    computeDistace(nonllmfcc, llmfcc)
 

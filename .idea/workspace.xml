@@ -3,19 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="aeb38a18-76f6-4572-bbe9-12852ec400cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_chunks/chunk0.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_chunks/chunk1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_chunks/chunk2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_chunks/chunk3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_chunks/chunk4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_chunks/chunk5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_chunks/chunk6.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_chunks/chunk7.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_chunks/chunk8.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_words.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/import_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/import_words.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/normalize_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/normalize_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enveloper_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exportAsCsv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_words.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/import_words.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/normalize_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rawMfcc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/removeAll.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testMfcc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tfTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,21 +61,21 @@
     <session id="-1936584226">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.4" value="5" />
           <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="411" />
-          <entry key="py" value="11098" />
+          <entry key="py" value="12396" />
           <entry key="sh" value="89" />
           <entry key="txt" value="369" />
         </counts>
@@ -84,64 +84,34 @@
         <counts>
           <entry key="Bash" value="60" />
           <entry key="PLAIN_TEXT" value="29" />
-          <entry key="Python" value="11509" />
+          <entry key="Python" value="12807" />
           <entry key="Scratch" value="369" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="1" />
+          <entry key="csv" value="2" />
           <entry key="md" value="1" />
-          <entry key="py" value="109" />
+          <entry key="py" value="128" />
           <entry key="sh" value="4" />
+          <entry key="train" value="1" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="2" />
+          <entry key="CSV" value="1" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="109" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="128" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/exportAsCsv.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#94#112#0" expanded="true" />
-                <marker date="1550246116629" expanded="true" signature="363:366" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/import_words.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="116" column="6" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_words.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -157,7 +127,11 @@
       <find>LL</find>
       <find>all_ch</find>
       <find>all_</find>
+      <find>numpy</find>
     </findStrings>
+    <replaceStrings>
+      <replace>np</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,12 +153,14 @@
         <option value="$PROJECT_DIR$/removeAll.sh" />
         <option value="$PROJECT_DIR$/testMfcc.py" />
         <option value="$PROJECT_DIR$/enveloper_data.py" />
-        <option value="$PROJECT_DIR$/rawMfcc.py" />
         <option value="$PROJECT_DIR$/normalize_data.py" />
         <option value="$PROJECT_DIR$/clean_data.py" />
         <option value="$PROJECT_DIR$/get_words.py" />
-        <option value="$PROJECT_DIR$/import_words.py" />
         <option value="$PROJECT_DIR$/exportAsCsv.py" />
+        <option value="$PROJECT_DIR$/tfTest.py" />
+        <option value="$PROJECT_DIR$/keras_test.py" />
+        <option value="$PROJECT_DIR$/import_words.py" />
+        <option value="$PROJECT_DIR$/rawMfcc.py" />
       </list>
     </option>
   </component>
@@ -206,6 +182,16 @@
             <path>
               <item name="speechApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="speechApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="speechApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="speechApp" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="speechApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="speechApp" type="462c0819:PsiDirectoryNode" />
+              <item name="nonLL_chunks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="speechApp" type="b2602c69:ProjectViewProjectNode" />
@@ -245,28 +231,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.exportAsCsv">
-    <configuration name="clean_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="project_speech" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clean_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.rawMfcc">
     <configuration name="exportAsCsv" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project_speech" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -351,20 +316,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tfTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project_speech" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tfTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.rawMfcc" />
       <item itemvalue="Python.get_words" />
       <item itemvalue="Python.import_words" />
-      <item itemvalue="Python.clean_data" />
       <item itemvalue="Python.exportAsCsv" />
+      <item itemvalue="Python.tfTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.exportAsCsv" />
-        <item itemvalue="Python.import_words" />
-        <item itemvalue="Python.get_words" />
         <item itemvalue="Python.rawMfcc" />
-        <item itemvalue="Python.clean_data" />
+        <item itemvalue="Python.import_words" />
+        <item itemvalue="Python.tfTest" />
+        <item itemvalue="Python.exportAsCsv" />
+        <item itemvalue="Python.get_words" />
       </list>
     </recent_temporary>
   </component>
@@ -474,20 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rawMfcc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testMfcc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/normalize_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -495,53 +467,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enveloper_data.py">
+    <entry file="file://$PROJECT_DIR$/tfTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        <state relative-caret-position="441">
+          <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foo.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+    <entry file="file://$PROJECT_DIR$/../tf/examples/02_placeholder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tf/examples/02_simple_tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tf/examples/03_linreg_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tf/examples/03_linreg_placeholder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="64" column="18" lean-forward="true" selection-end-line="68" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tf/examples/02_lazy_loading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="34" column="29" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clean_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
+        <state relative-caret-position="1110">
           <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_words.py">
+    <entry file="file://$PROJECT_DIR$/enveloper_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="64">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/import_words.py">
+    <entry file="file://$PROJECT_DIR$/keras_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="116" column="6" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exportAsCsv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="135">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foo.csv">
+      <provider editor-type-id="text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2235" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#94#112#0" expanded="true" />
-            <marker date="1550246116629" expanded="true" signature="363:366" ph="..." />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rawMfcc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testMfcc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
