@@ -26,7 +26,7 @@ outFileWav = [] # wav file chunks
 outFileMp3 = [] # mp3 file chunks
 
 
-def getNumberOfFiles(path = './LL_chunks'):
+def getNumberOfFiles(path = '../LL_chunks'):
     list = os.listdir(path)  # dir is your directory path
     number_files = len(list)
 
@@ -36,7 +36,7 @@ def getNumberOfFiles(path = './LL_chunks'):
 
 
 
-def getNumberOfSentences(path = './LL-sentences'):
+def getNumberOfSentences(path = '../LL-sentences'):
 
     list = os.listdir(path)  # dir is your directory path
     number_files = len(list)

@@ -47,8 +47,6 @@ def rcEnv(dischargeRate, numberOffiles, soundData):  # RC circuit, to envelope t
             # if soundData[i][j] <= soundData[i][j+1]:
             #     soundData[i][j+1] = soundData[i][j]*1.5
 
-
-
     print("done enveloping the samples according to RC law")
     return soundData
 
