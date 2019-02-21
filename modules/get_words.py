@@ -11,10 +11,10 @@ RATE = 44100
 frames = []
 p = pyaudio.PyAudio()
 RECORD_SECONDS = 10
-minimumWordSize = 200 # if the size of the word is <= this, reject the chunk
+minimumWordSize = 450 # if the size of the word is <= this, reject the chunk
 
 fileOffset = getNumberOfFiles() # makes sure that old chunks are not re-written
-sentenceOffset = getNumberOfSentences() # makes sure that old sentences are not re-written
+sentenceOffset = getNumberOfSentences()-1 # makes sure that old sentences are not re-written
 
 WAVE_OUTPUT_FILENAME = "../LL-sentences/output"+str(sentenceOffset)+".wav"
 DEFAULT_CHUNKNAME = "../LL_chunks/chunk{}.wav"
@@ -60,7 +60,6 @@ def splitWavFileAndStore():
 
     rejectedOffset = 0
 
-
     for i, chunk in enumerate(audio_chunks): # audio_chunks is a python list
 
         if(checkChunk(chunk,i, minimumWordSize)): #
@@ -101,15 +100,12 @@ def askUser():
 
 
 
-
-
-
 if __name__ == '__main__':
 
     askUser()
-    # startRecording()
-    # storeWavFile()
-    # splitWavFileAndStore()
+    startRecording()
+    storeWavFile()
+    splitWavFileAndStore()
     
     
     

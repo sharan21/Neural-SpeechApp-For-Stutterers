@@ -1,11 +1,9 @@
 '''
 Not currently in used in Pipeline. Will be implemented in the future to further smoothen the spectral envelope
-
 '''
 
 from import_words import *
 import numpy as np
-
 
 delta = 0.7  # percentage
 numberOfFiles = 4

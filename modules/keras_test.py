@@ -12,7 +12,10 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
 
 
+
 # x_train and y_train are Numpy arrays --just like in the Scikit-Learn API.
+
+
 model.fit(x_train, y_train, epochs=5, batch_size=32)
 
 # model.train_on_batch(x_batch, y_batch)

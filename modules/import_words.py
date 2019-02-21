@@ -16,11 +16,9 @@ import scipy.io.wavfile
 from pydub import AudioSegment
 import os
 
-
 rateList = []
 dataList = []
 soundData = []
-
 
 outFileWav = [] # wav file chunks
 outFileMp3 = [] # mp3 file chunks
@@ -31,9 +29,7 @@ def getNumberOfFiles(path = '../LL_chunks'):
     number_files = len(list)
 
     # print ("Number of Files found in all_chunks:", number_files-1)
-
     return number_files
-
 
 
 def getNumberOfSentences(path = '../LL-sentences'):
@@ -53,7 +49,7 @@ def convertToMp3(numberOfFilesHere): # run only after you get all the wav chunks
         AudioSegment.from_wav(outFile[i]).export(outFileMp[i], format="mp3")
 
 
-def importAll(numberOfFilesHere): # default is path = ./LL_chunks
+def importAll(numberOfFilesHere): # not in use
 
     print("assigning names of samples")
     outFile, outFileMpthree = nameAll(numberOfFilesHere)
@@ -70,13 +66,9 @@ def importAll(numberOfFilesHere): # default is path = ./LL_chunks
 
 def importAllFromDir(path): # better import function to import them all
 
-
-
     list = os.listdir(path)
-    print ("There are {} chunks in directory {}".format(len(list)-1, path))
+    print ("There are {} chunks in directory {}".format(len(list), path))
 
-    if '.DS_Store' in enumerate(list):
-        list.remove('.DS_Store')
 
     print ("importing all of them...")
 
@@ -85,13 +77,13 @@ def importAllFromDir(path): # better import function to import them all
     else:
         labels = np.zeros((len(list), 1))
 
-
     soundData = []
 
     for i in range(len(list)):
 
         # get names of all the samples in the form of "outfile"
-
+        if list[i] == '.DS_Store':
+            continue
         rate, data = scipy.io.wavfile.read(path+'/'+list[i])
         rateList.append(rate)
         dataList.append(rate)
@@ -99,8 +91,6 @@ def importAllFromDir(path): # better import function to import them all
         print("imported {}".format(list[i]))
 
     return soundData, labels
-
-
 
 
 
@@ -133,15 +123,26 @@ def plotAllMaxFour(soundData, numberOfFilesHere): # for max 4 plots
     print("done plotting samples...")
 
 
-def plotAll(soundDataHere, numberOfFilesHere):
+def plotData(soundDataHere, numberOfFilesHere):
 
-    print("plotting all the samples")
+    print("plotting some the samples")
     for i in range(numberOfFilesHere-1):
         plt.plot(soundDataHere[i])
         plt.show()
 
+    print("done plotting samples...")
+
+
+def plotAll(soundDataHere):
+    print("plotting all the samples")
+    for i in range(len(soundDataHere)):
+        plt.plot(soundDataHere[i])
+        plt.show()
 
     print("done plotting samples...")
+
+
+
     
 def shuffle_in_unison_scary(soundDataHere, labels):
     rng_state = np.random.get_state()
@@ -150,15 +151,11 @@ def shuffle_in_unison_scary(soundDataHere, labels):
     np.random.shuffle(labels)
 
 
-
-
 if __name__ == '__main__':
 
-    soundData, labels = importAllFromDir('./nonLL_chunks')
+    soundData, labels = importAllFromDir('../LL_chunks')
 
-    plotAll(soundData, getNumberOfFiles())
 
-    print labels
 
     # print getNumberOfSentences('./train-data')
 

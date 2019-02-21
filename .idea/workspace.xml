@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="aeb38a18-76f6-4572-bbe9-12852ec400cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/enveloper_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/envelope_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/envelope_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/get_mfcc.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/get_mfcc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/get_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/get_words.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/import_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/import_words.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/keras_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/keras_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/normalize_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/normalize_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL-sentences/output2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL-sentences/output2.wav" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,21 +55,21 @@
     <session id="-1936584226">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
+          <entry key="project.closed" value="25" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="5" />
-          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.3" value="5" />
           <entry key="project.open.time.4" value="5" />
           <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="411" />
-          <entry key="py" value="12771" />
+          <entry key="py" value="13555" />
           <entry key="sh" value="89" />
           <entry key="txt" value="369" />
         </counts>
@@ -74,7 +78,7 @@
         <counts>
           <entry key="Bash" value="60" />
           <entry key="PLAIN_TEXT" value="29" />
-          <entry key="Python" value="13182" />
+          <entry key="Python" value="13966" />
           <entry key="Scratch" value="369" />
         </counts>
       </usages-collector>
@@ -82,7 +86,7 @@
         <counts>
           <entry key="csv" value="2" />
           <entry key="md" value="1" />
-          <entry key="py" value="131" />
+          <entry key="py" value="150" />
           <entry key="sh" value="4" />
           <entry key="train" value="1" />
           <entry key="txt" value="2" />
@@ -94,41 +98,27 @@
           <entry key="CSV" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="131" />
+          <entry key="Python" value="150" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="speechApp" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/get_words.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1550651042280" expanded="true" signature="2432:2884" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/import_words.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/modules/get_final_processed_data.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/envelope_data.py">
+        <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
+            <state relative-caret-position="570">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -183,9 +173,13 @@
         <option value="$PROJECT_DIR$/keras_test.py" />
         <option value="$PROJECT_DIR$/import_words.py" />
         <option value="$PROJECT_DIR$/rawMfcc.py" />
-        <option value="$PROJECT_DIR$/modules/get_words.py" />
-        <option value="$PROJECT_DIR$/modules/import_words.py" />
         <option value="$PROJECT_DIR$/modules/envelope_data.py" />
+        <option value="$PROJECT_DIR$/modules/get_words.py" />
+        <option value="$PROJECT_DIR$/modules/keras_test.py" />
+        <option value="$PROJECT_DIR$/modules/import_words.py" />
+        <option value="$PROJECT_DIR$/modules/normalize_data.py" />
+        <option value="$PROJECT_DIR$/modules/get_final_processed_data.py" />
+        <option value="$PROJECT_DIR$/modules/get_mfcc.py" />
       </list>
     </option>
   </component>
@@ -210,6 +204,16 @@
             </path>
             <path>
               <item name="speechApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="speechApp" type="462c0819:PsiDirectoryNode" />
+              <item name="LL_chunks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="speechApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="speechApp" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="speechApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
@@ -223,7 +227,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/sharan/Desktop/project_speech/parseWav.py" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -246,28 +250,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_words (1)">
-    <configuration name="exportAsCsv" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="project_speech" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exportAsCsv.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.normalize_data">
     <configuration name="get_words (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project_speech" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -281,6 +264,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/get_words.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="import_words (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project_speech" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/import_words.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -310,6 +314,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="normalize_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project_speech" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/normalize_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="rawMfcc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project_speech" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -331,41 +356,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tfTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="project_speech" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tfTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.rawMfcc" />
       <item itemvalue="Python.import_words" />
-      <item itemvalue="Python.exportAsCsv" />
-      <item itemvalue="Python.tfTest" />
       <item itemvalue="Python.get_words (1)" />
+      <item itemvalue="Python.normalize_data" />
+      <item itemvalue="Python.import_words (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.normalize_data" />
+        <item itemvalue="Python.import_words (1)" />
         <item itemvalue="Python.get_words (1)" />
         <item itemvalue="Python.rawMfcc" />
         <item itemvalue="Python.import_words" />
-        <item itemvalue="Python.tfTest" />
-        <item itemvalue="Python.exportAsCsv" />
       </list>
     </recent_temporary>
   </component>
@@ -384,10 +388,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="833" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.24945612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.501006" side_tool="true" weight="0.24945612" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32928476" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32928476" />
@@ -516,28 +521,65 @@
     <entry file="file://$PROJECT_DIR$/train" />
     <entry file="file://$PROJECT_DIR$/rawMfcc.py" />
     <entry file="file://$PROJECT_DIR$/testMfcc.py" />
-    <entry file="file://$PROJECT_DIR$/modules/import_words.py">
+    <entry file="file://$PROJECT_DIR$/modules/clean_data.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/envelope_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
+        <state relative-caret-position="15">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/export_csv.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/normalize_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="40" column="56" lean-forward="true" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+          <folding>
+            <element signature="e#102#120#0" expanded="true" />
+            <marker date="1550737833699" expanded="true" signature="623:982" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/keras_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/get_words.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="420">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1550651042280" expanded="true" signature="2432:2884" ph="..." />
+            <marker date="1550677705253" expanded="true" signature="2433:2882" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/envelope_data.py">
+    <entry file="file://$PROJECT_DIR$/modules/import_words.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
+        <state relative-caret-position="-202">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_final_processed_data.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
