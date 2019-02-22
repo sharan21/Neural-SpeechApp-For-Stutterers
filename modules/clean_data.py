@@ -17,11 +17,10 @@ betaForExponentialAverage = 0.8
 fixedChunkSize = 200
 # each word chunk has a fixed size to feed into the tf graph
 
-densityOfChunk = 100
 
 
 
-def reduceDensity(soundDataHere):
+def reduceDensity(soundDataHere, densityOfChunk = 100):
 
     cleanSoundData = []
 
@@ -30,7 +29,7 @@ def reduceDensity(soundDataHere):
         k = 0
         bufferForCleaning = []
 
-        for j in range(0, soundDataHere[i].size-1, densityOfChunk):
+        for j in range(0, len(soundDataHere[i]), densityOfChunk):
 
             bufferForCleaning.insert(k, soundDataHere[i][j])
             k += 1
@@ -41,7 +40,7 @@ def reduceDensity(soundDataHere):
 
 
 
-def weightedAverage(soundDataHere, beta = betaForExponentialAverage):
+def weightedAverage(soundDataHere, beta = 0.8):
 
     # newData[i] = beta*newData[i-1] + (1-beta)*soundData[i]
 
@@ -54,7 +53,7 @@ def weightedAverage(soundDataHere, beta = betaForExponentialAverage):
 
         bufferHere = []
 
-        for j in range(0, soundDataHere[i].size - 1, 1):
+        for j in range(len(soundDataHere[i])):
 
             if j == 0:
                 bufferHere.append(0)
@@ -91,10 +90,12 @@ def assertConstantChunkSize(soundData):
 
     print("asserting that all the chunks are of constant size...")
     print
+
     size = soundData[0].size
     status = 1
-    for i in range(1,numberOfFiles,1):
-        if soundData[i].size != soundData[i-1].size:
+
+    for i in range(len(soundData)-1):
+        if soundData[i].size != soundData[i+1].size:
             status = 0
 
     if status == 1:
@@ -110,15 +111,12 @@ def printChunkSizeDiff(soundData, fixedSize = 200):
         print("difference in size for chunk{}: is {}".format(i, diffInSize))
 
 
-
-
-
-
-
 if __name__ == "__main__":
     numberOfFiles = 4
 
-    soundData = importAll(numberOfFiles)
+    soundData = importAll(getNumberOfSentences('../LL_chunks'))
+
+    plotAll(soundData)
 
     soundData = reduceDensity(soundData)
 
@@ -128,8 +126,7 @@ if __name__ == "__main__":
 
     assertConstantChunkSize(soundData)
 
-    plotAllMaxFour(soundData, numberOfFiles)
-
+    plotAll(soundData)
 
 
 

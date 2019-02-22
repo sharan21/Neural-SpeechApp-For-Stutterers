@@ -3,6 +3,9 @@ Only run when you have finished recording your dataset using get_words
 '''
 
 from import_words import *
+from clean_data import *
+from normalize_data import *
+
 
 def getTrainingData():
 
@@ -28,6 +31,40 @@ def getTrainingData():
     #shuffling
 
     shuffle_in_unison_scary(final_data, final_labels)
+
+    #processing and cleaning
+
+    final_data = weightedAverage(final_data)
+
+    reduceDensity(final_data)
+
+    trimChunks(final_data)
+
+    assertConstantChunkSize(final_data)
+
+    normalizeSoundData(final_data)
+
+    assertZeroMean(final_data)
+
+    assertUnitVariance(final_data)
+
+
+
+    print ("DONE!")
+
+    return final_data, labels
+
+
+if __name__ == '__main__':
+
+    data = getTrainingData()
+
+    plotAll(data)
+
+
+
+
+
 
 
 

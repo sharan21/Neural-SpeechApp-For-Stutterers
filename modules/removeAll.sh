@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
-cd all_chunks
+
+cd ../LL_chunks
+
 rm -rf *
+
+cd ../nonLL_chunks
+rm -rf *
+
 cd ..
+
+echo "emptied chunks"

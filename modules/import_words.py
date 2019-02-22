@@ -94,14 +94,14 @@ def importAllFromDir(path): # better import function to import them all
 
 
 
-def nameAll(numberOfFilesHere): # gets list of file names for wav and mp3 to export later
+def nameAll(numberOfFilesHere): # gets list of file names for wav and mp3 to export later, not needed
 
     for i in range(numberOfFilesHere-1):
-        outFileWav.append("./LL_chunks/chunk{0}.wav".format(i))
+        outFileWav.append("../LL_chunks/chunk{0}.wav".format(i))
         print(outFileWav[i])
 
     for i in range(numberOfFilesHere-1):
-        outFileMp3.append("./mp3_chunks/chunk{0}.mp3".format(i))
+        outFileMp3.append("../mp3_chunks/chunk{0}.mp3".format(i))
 
 
     print("done naming all samples...")
