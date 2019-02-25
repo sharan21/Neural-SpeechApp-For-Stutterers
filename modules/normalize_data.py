@@ -41,7 +41,7 @@ if __name__ == '__main__':
     soundData, labels = importAllFromDir('../LL_chunks')
 
     normalizeSoundData(soundData)
-
+    plotAll(soundData)
 
 
 

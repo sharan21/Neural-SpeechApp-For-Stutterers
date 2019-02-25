@@ -6,11 +6,12 @@ Also implements exponential weighted average to smoothen the data.
 
 '''
 
-from import_words import *
+from import_words import importAllFromDir,importAll, plotAll, getNumberOfSentences
 import numpy as np
+import os
 
 
-betaForExponentialAverage = 0.8
+betaForExponentialAverage = 0.99
 # use b = 0 to mirror the original data
 # as beta increases, oscillations decrease
 
@@ -74,12 +75,12 @@ def trimChunks(soundData, fixedSize = 200): # trim the chunk to get fixed size
 
     for i in range(len(soundData)):
 
-        diffInSize = soundData[i].size - fixedSize
+        diffInSize = len(soundData[i]) - fixedSize
 
-        if soundData[i].size % 2 == 0:
-            temporaryBuffer = np.split(soundData[i], [diffInSize/2, soundData[i].size-diffInSize/2])
+        if len(soundData[i]) % 2 == 0:
+            temporaryBuffer = np.split(soundData[i], [diffInSize/2, len(soundData[i])-diffInSize/2])
         else:
-            temporaryBuffer = np.split(soundData[i], [diffInSize / 2, soundData[i].size - 1 - diffInSize / 2])
+            temporaryBuffer = np.split(soundData[i], [diffInSize / 2, len(soundData[i]) - 1 - diffInSize / 2])
 
         soundData[i] = temporaryBuffer[1] # take the middle slice of the split soundData array
 
@@ -91,11 +92,11 @@ def assertConstantChunkSize(soundData):
     print("asserting that all the chunks are of constant size...")
     print
 
-    size = soundData[0].size
+    size = len(soundData[0])
     status = 1
 
     for i in range(len(soundData)-1):
-        if soundData[i].size != soundData[i+1].size:
+        if len(soundData[i]) != len(soundData[i+1]):
             status = 0
 
     if status == 1:
@@ -106,17 +107,16 @@ def assertConstantChunkSize(soundData):
 
 def printChunkSizeDiff(soundData, fixedSize = 200):
 
-    for i in range(numberOfFiles):
+    for i in range(len(soundData)):
         diffInSize = fixedSize - soundData[i].size
         print("difference in size for chunk{}: is {}".format(i, diffInSize))
 
 
 if __name__ == "__main__":
-    numberOfFiles = 4
 
-    soundData = importAll(getNumberOfSentences('../LL_chunks'))
+    soundData, labels = importAllFromDir('../LL_chunks')
 
-    plotAll(soundData)
+
 
     soundData = reduceDensity(soundData)
 
@@ -127,6 +127,8 @@ if __name__ == "__main__":
     assertConstantChunkSize(soundData)
 
     plotAll(soundData)
+
+
 
 
 

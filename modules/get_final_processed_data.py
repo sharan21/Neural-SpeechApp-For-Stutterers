@@ -22,11 +22,21 @@ def getTrainingData():
     final_data = []
     final_labels = []
 
-    final_data.append(ll_data)
-    final_data.append(nonll_data)
+    for data in ll_data:
+        final_data.append(data)
 
-    final_labels.append(ll_labels)
-    final_labels.append(nonll_labels)
+    for data in nonll_data:
+        final_data.append(data)
+
+    for label in ll_labels:
+        final_labels.append(label)
+
+    for label in nonll_labels:
+        final_labels.append(label)
+
+
+
+    print len(final_data)
 
     #shuffling
 
@@ -34,9 +44,15 @@ def getTrainingData():
 
     #processing and cleaning
 
-    final_data = weightedAverage(final_data)
-
     reduceDensity(final_data)
+
+    trimChunks(final_data)
+
+    assertConstantChunkSize(final_data)
+
+    weightedAverage(final_data, 0.99)
+
+
 
     trimChunks(final_data)
 
@@ -52,12 +68,12 @@ def getTrainingData():
 
     print ("DONE!")
 
-    return final_data, labels
+    return final_data, final_labels
 
 
 if __name__ == '__main__':
 
-    data = getTrainingData()
+    data, labels = getTrainingData()
 
     plotAll(data)
 

@@ -85,18 +85,22 @@ def checkChunk(chunk, i, minimumWordSize): # check if the chunk is valid or not,
 
 def askUser():
 
-    choice = input("Press 1 for LL sentence input, Press 0 for Non LL sentence input.")
+    choice = input("Press 1 for LL sentence input, Press 0 for Non LL sentence input. ")
     global RECORD_SECONDS
-    RECORD_SECONDS = input("How many seconds do you want to record for")
+    RECORD_SECONDS = input("How many seconds do you want to record for? ")
 
     if choice == 0:
         print("You are recording Non LL sentences...")
         global WAVE_OUTPUT_FILENAME
         global DEFAULT_CHUNKNAME
         global minimumWordSize
-        WAVE_OUTPUT_FILENAME = "../nonLL-sentences/output" + str(getNumberOfFiles("../nonLL_chunks")) + ".wav"
+        global fileOffset
+        global sentenceOffset
+        sentenceOffset = getNumberOfFiles("../nonLL-sentences")
+        fileOffset = getNumberOfFiles("../nonLL_chunks")
+        WAVE_OUTPUT_FILENAME = "../nonLL-sentences/output" + str(sentenceOffset) + ".wav"
         DEFAULT_CHUNKNAME = "../nonLL_chunks/chunk{}.wav"
-        minimumWordSize = 100
+        minimumWordSize = 200
 
 
     else:

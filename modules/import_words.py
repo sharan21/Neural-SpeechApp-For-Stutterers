@@ -67,12 +67,16 @@ def importAll(numberOfFilesHere): # not in use
 def importAllFromDir(path): # better import function to import them all
 
     list = os.listdir(path)
-    print ("There are {} chunks in directory {}".format(len(list), path))
 
+    if '.DS_Store' in list:
+        list.remove('.DS_Store')
+
+
+    print ("There are {} chunks in directory {}".format(len(list), path))
 
     print ("importing all of them...")
 
-    if path == './LL_chunks':
+    if path == '../LL_chunks':
         labels = np.ones((len(list), 1))
     else:
         labels = np.zeros((len(list), 1))
@@ -86,7 +90,7 @@ def importAllFromDir(path): # better import function to import them all
             continue
         rate, data = scipy.io.wavfile.read(path+'/'+list[i])
         rateList.append(rate)
-        dataList.append(rate)
+        dataList.append(data)
         soundData.append(np.absolute(data))
         print("imported {}".format(list[i]))
 
@@ -97,11 +101,11 @@ def importAllFromDir(path): # better import function to import them all
 def nameAll(numberOfFilesHere): # gets list of file names for wav and mp3 to export later, not needed
 
     for i in range(numberOfFilesHere-1):
-        outFileWav.append("../LL_chunks/chunk{0}.wav".format(i))
+        outFileWav.append("../LL_chunks/chunk{0}.wav".format(i+1))
         print(outFileWav[i])
 
     for i in range(numberOfFilesHere-1):
-        outFileMp3.append("../mp3_chunks/chunk{0}.mp3".format(i))
+        outFileMp3.append("../mp3_chunks/chunk{0}.mp3".format(i+1))
 
 
     print("done naming all samples...")
@@ -136,7 +140,11 @@ def plotData(soundDataHere, numberOfFilesHere):
 def plotAll(soundDataHere):
     print("plotting all the samples")
     for i in range(len(soundDataHere)):
+        plt.title("chunk{}".format(i+1))
+        plt.xlabel("Sample")
+        plt.ylabel("Normalised amplitude")
         plt.plot(soundDataHere[i])
+
         plt.show()
 
     print("done plotting samples...")
@@ -154,6 +162,8 @@ def shuffle_in_unison_scary(soundDataHere, labels):
 if __name__ == '__main__':
 
     soundData, labels = importAllFromDir('../LL_chunks')
+
+    plotAll(soundData)
 
 
 
