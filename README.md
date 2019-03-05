@@ -14,4 +14,5 @@ All these 3 features can be monitored and fed to a tf graph and the output can b
 
 If the proper technique is used, these is a very low chance that disfluency can occur. Thus this app makes sure that person is conscious of using the prescribed technique in the proper manner, alleviating stress in stressfull speaking situations. 
 
-
+# Instructions to use modules for input pipeline
+refer file "instructions" in main dir.
