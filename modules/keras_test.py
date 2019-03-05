@@ -1,15 +1,22 @@
 from keras.models import Sequential
 from keras.layers import Dense
+x
+
+
+
 
 model = Sequential()
 
-model.add(Dense(units=64, activation='relu', input_dim=100))
-model.add(Dense(units=10, activation='softmax'))
+model.add(Dense(units=20, activation='relu', input_dim=20))
+model.add(Dense(units=30, activation='relu'))
+model.add(Dense(units=1, activation='softmax'))
 
 
 model.compile(loss='categorical_crossentropy',
               optimizer='sgd',
               metrics=['accuracy'])
+
+
 
 
 

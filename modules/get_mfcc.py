@@ -10,7 +10,6 @@ import numpy as np
 from dtw import dtw
 import librosa.display
 import os
-from numpy.linalg import norm
 from normalize_data import *
 from get_final_processed_data import *
 
@@ -121,6 +120,19 @@ def average(mfcc):
 
     return ave_numpy
 
+def getFinalNormalizedMfcc():
+
+    data = getMfccInputArray()
+
+    normalizeSoundData(data)
+
+    _, labels = getTrainingData()
+
+    shuffle_in_unison_scary(data, labels)
+
+    return data, labels
+
+
 
 
 
@@ -132,13 +144,7 @@ if __name__ == '__main__':
     # plotMfcc(nonllmfcc, llmfcc)
     # computeDistace(nonllmfcc, llmfcc)
 
-    data = getMfccInputArray()
-
-    normalizeSoundData(data)
-
-    _, labels = getTrainingData()
-
-    shuffle_in_unison_scary(data, labels)
+    data, labels = getFinalNormalizedMfcc()
 
 
 
