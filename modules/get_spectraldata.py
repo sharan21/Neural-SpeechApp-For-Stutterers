@@ -79,7 +79,7 @@ def getTrainingData():
     print ("DONE!")
 
 
-    return final_data, final_labels
+    return final_data, np.array(final_labels)
 
 
 

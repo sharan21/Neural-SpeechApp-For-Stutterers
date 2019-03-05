@@ -14,8 +14,21 @@ def distribute(data, labels):
 
     print("distributing data to test and train arrays...")
 
-    split = math.floor(len(data)*train);
-    print split
+    split = int(math.floor(len(data)*train))
+    print ("{}:{}".format(split,len(data)-split))
+
+
+    traindata = data[0:split,:]
+    print traindata.shape
+    trainlabel = labels[0:int(split),:]
+    print trainlabel.shape
+
+    testdata = data[split+1:len(data), :]
+    print testdata.shape
+    testlabel = labels[split+1:len(data), :]
+    print testlabel.shape
+
+    return traindata, trainlabel, testdata, testlabel
 
 
 
@@ -23,5 +36,6 @@ def distribute(data, labels):
 if __name__ == '__main__':
 
     data, labels = getFinalNormalizedMfcc()
-    print data
-    print labels
+    xtrain, ytrain, xtest, ytest = distribute(data, labels)
+
+

@@ -1,0 +1,12 @@
+For spectral data input pipeline:
+1. Populate the data set: getwords.py
+2. import, filter and clean data: get_spectraldata.py
+3. distribute to train and test sets: distribute_sets.py
+4. feed to keeras: keeras_test.py
+
+For Mfcc data input pipeline:
+1. Populate the data set: getwords.py
+2. import wavs, and get mfcc: get_mfcc.py
+3. distribute to train and tets sets: distribute_sets.py
+4. feed to keras: keras_test.py
+
