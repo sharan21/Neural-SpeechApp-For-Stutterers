@@ -5,6 +5,7 @@ Only run when you have finished recording your dataset using get_words
 from import_words import *
 from clean_data import *
 from normalize_data import *
+from get_mfcc import *
 
 
 def getTrainingData():
@@ -34,9 +35,17 @@ def getTrainingData():
     for label in nonll_labels:
         final_labels.append(label)
 
-
-
     print len(final_data)
+    print len(final_labels)
+
+
+
+
+
+
+    '''
+
+    
 
     #shuffling
 
@@ -53,7 +62,6 @@ def getTrainingData():
     weightedAverage(final_data, 0.99)
 
 
-
     trimChunks(final_data)
 
     assertConstantChunkSize(final_data)
@@ -63,19 +71,24 @@ def getTrainingData():
     assertZeroMean(final_data)
 
     assertUnitVariance(final_data)
+    
+    '''
 
 
 
     print ("DONE!")
 
+
     return final_data, final_labels
+
+
+
 
 
 if __name__ == '__main__':
 
     data, labels = getTrainingData()
 
-    plotAll(data)
 
 
 

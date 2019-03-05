@@ -12,7 +12,7 @@ def normalizeSoundData(soundDataHere): # takes numpy array and normalizes it
 
     print("normalizing the sound data, for {} files".format(len(soundDataHere)))
 
-    for i in range(len(soundData)):
+    for i in range(len(soundDataHere)):
         print("normalizing the sound data, for {}st chunk".format(i))
         mean = np.mean(soundDataHere[i])
         std = np.std(soundDataHere[i])
@@ -21,7 +21,7 @@ def normalizeSoundData(soundDataHere): # takes numpy array and normalizes it
 
 def assertZeroMean(soundDataHere):
     for sound in soundDataHere:
-        print(np.mean(sound))
+        # print(np.mean(sound))
         if np.mean(sound) > 0.01:
             return False
     return True
@@ -42,6 +42,8 @@ if __name__ == '__main__':
 
     normalizeSoundData(soundData)
     plotAll(soundData)
+
+
 
 
 
