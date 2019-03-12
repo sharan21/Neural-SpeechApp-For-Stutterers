@@ -2,7 +2,6 @@
 takes final numpydata sets and labels as inputs and distrubutes them into 2 sets, test and train
 input data is already shuffled, and matched with the corresponding shuffled label before distribution
 '''
-import math
 from get_mfcc import *
 
 train= 0.8
@@ -23,14 +22,12 @@ def distribute(data, labels):
     trainlabel = labels[0:int(split),:]
     print trainlabel.shape
 
-    testdata = data[split+1:len(data), :]
+    testdata = data[split:len(data), :]
     print testdata.shape
-    testlabel = labels[split+1:len(data), :]
+    testlabel = labels[split:len(data), :]
     print testlabel.shape
 
     return traindata, trainlabel, testdata, testlabel
-
-
 
 
 if __name__ == '__main__':

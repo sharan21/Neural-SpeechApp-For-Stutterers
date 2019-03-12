@@ -11,7 +11,7 @@ from dtw import dtw
 import librosa.display
 import os
 from normalize_data import *
-from get_final_processed_data import *
+from get_spectraldata import *
 
 pre_emphasis = 0.97
 frame_size = 0.025
@@ -74,7 +74,7 @@ def padMfcc(mfcc, fixedsize = 30):
 
     print (mfcc.shape)
 
-def getMfccInputArray():
+def getMfccAverage(): # return average of all mfccs for each word
 
     # first creating the dir list
     pathlist = []
@@ -89,6 +89,25 @@ def getMfccInputArray():
     for path in pathlist:
         print ("finding mfcc of", path)
         data.append(average(findMfcc(path)))
+        print len(data[-1])
+
+    return np.array(data)
+
+def getAllMfcc(): # return average of all mfccs for each word
+
+    # first creating the dir list
+    pathlist = []
+
+    pathlist.extend(absoluteFilePaths('../LL_chunks'))
+    pathlist.extend(absoluteFilePaths('../nonLL_chunks'))
+
+    print ("path list is",pathlist)
+
+    data = []
+
+    for path in pathlist:
+        print ("finding mfcc of", path)
+        data.append(findMfcc(path))
         print len(data[-1])
 
     return np.array(data)
@@ -120,15 +139,20 @@ def average(mfcc):
 
     return ave_numpy
 
-def getFinalNormalizedMfcc():
+def getFinalNormalizedMfcc(): #shuffling occurs here
 
-    data = getMfccInputArray()
+    data = getMfccAverage()
 
     normalizeSoundData(data)
 
+
+
     _, labels = getTrainingData()
 
+    print labels
+
     shuffle_in_unison_scary(data, labels)
+
 
     return data, labels
 

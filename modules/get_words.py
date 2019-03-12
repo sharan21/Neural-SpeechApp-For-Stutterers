@@ -11,13 +11,17 @@ RATE = 44100
 frames = []
 p = pyaudio.PyAudio()
 RECORD_SECONDS = 10
-minimumWordSize = 450 # if the size of the word is <= this, reject the chunk
+minimumWordSize = 400 # if the size of the word is <= this, reject the chunk
+maximumWordSize = 1300
 
 fileOffset = getNumberOfFiles() # makes sure that old chunks are not re-written
 sentenceOffset = getNumberOfSentences() # makes sure that old sentences are not re-written
 
 WAVE_OUTPUT_FILENAME = "../LL-sentences/output"+str(sentenceOffset)+".wav"
 DEFAULT_CHUNKNAME = "../LL_chunks/chunk{}.wav"
+
+min_silence_len = 60 # default for LL
+silence_thresh = -60 # default for LL
 
 
 def startRecording():
@@ -56,7 +60,7 @@ def splitWavFileAndStore():
 
     line = AudioSegment.from_wav(WAVE_OUTPUT_FILENAME)
 
-    audio_chunks = split_on_silence(line, min_silence_len=60, silence_thresh=-30)  # isolation of words is done here
+    audio_chunks = split_on_silence(line, min_silence_len=60, silence_thresh=-60)  # isolation of words is done here
 
     rejectedOffset = 0
 
@@ -71,17 +75,21 @@ def splitWavFileAndStore():
         print ("exporting", out_file)
         chunk.export(out_file, format="wav")
         print("done exporting...")
+        temp = i
 
-    print("Total number of files:", i+1)
+    print("Total number of files:", temp+1)
 
-    return i+1
+    return temp+1
 
 def checkChunk(chunk, i, minimumWordSize): # check if the chunk is valid or not, according to size of chunk.
 
-    if(len(chunk) <= minimumWordSize):
-        print("rejected chunk{}".format(i))
+    status = False
 
-    return len(chunk) <= minimumWordSize
+    if((len(chunk) <= minimumWordSize) or (len(chunk)>maximumWordSize and askUser() == 0)):
+        print("rejected chunk{}".format(i))
+        status = True
+
+    return status
 
 def askUser():
 
@@ -96,15 +104,20 @@ def askUser():
         global minimumWordSize
         global fileOffset
         global sentenceOffset
+        global silence_thresh
+        global min_silence_len
+        min_silence_len = 20
         sentenceOffset = getNumberOfFiles("../nonLL-sentences")
         fileOffset = getNumberOfFiles("../nonLL_chunks")
         WAVE_OUTPUT_FILENAME = "../nonLL-sentences/output" + str(sentenceOffset) + ".wav"
         DEFAULT_CHUNKNAME = "../nonLL_chunks/chunk{}.wav"
-        minimumWordSize = 200
+        minimumWordSize = 300
 
 
     else:
         print("You are recording LL sentences...")
+
+    return choice
 
 
 

@@ -152,9 +152,9 @@ def plotAll(soundDataHere):
 
 
     
-def shuffle_in_unison_scary(soundDataHere, labels):
+def shuffle_in_unison_scary(data, labels):
     rng_state = np.random.get_state()
-    np.random.shuffle(soundDataHere)
+    np.random.shuffle(data)
     np.random.set_state(rng_state)
     np.random.shuffle(labels)
 

@@ -1,7 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aeb38a18-76f6-4572-bbe9-12852ec400cb" name="Default Changelist" comment="" />
+    <list default="true" id="aeb38a18-76f6-4572-bbe9-12852ec400cb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL-sentences/output1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk10.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk11.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk11.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk12.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk12.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk13.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk13.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk14.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk14.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk15.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk15.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk16.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk16.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk17.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk17.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk8.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk9.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk9.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/distribute_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/distribute_sets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/export_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/export_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/get_mfcc.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/get_mfcc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/get_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/get_words.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/import_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/import_words.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/keras_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/keras_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/removeAll.sh" beforeDir="false" afterPath="$PROJECT_DIR$/modules/removeAll.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL-sentences/output1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL-sentences/output1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL-sentences/output2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk10.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk11.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk11.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk12.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk12.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk13.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk13.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk14.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk14.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk15.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk15.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk16.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk16.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk17.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk18.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk18.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk20.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk20.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk21.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk21.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk22.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk22.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk23.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk23.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk24.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk24.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk7.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk9.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk9.wav" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,36 +114,38 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="411" />
-          <entry key="py" value="18741" />
-          <entry key="sh" value="209" />
+          <entry key="py" value="20073" />
+          <entry key="sh" value="272" />
           <entry key="txt" value="369" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="180" />
+          <entry key="Bash" value="243" />
           <entry key="PLAIN_TEXT" value="29" />
-          <entry key="Python" value="19152" />
+          <entry key="Python" value="20484" />
           <entry key="Scratch" value="369" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="2" />
+          <entry key="csvdata" value="2" />
+          <entry key="csvlabels" value="2" />
           <entry key="md" value="1" />
-          <entry key="py" value="197" />
-          <entry key="sh" value="8" />
+          <entry key="py" value="215" />
+          <entry key="sh" value="10" />
           <entry key="train" value="1" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="6" />
+          <entry key="Bash" value="8" />
           <entry key="CSV" value="1" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="197" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="215" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
@@ -100,24 +156,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/distribute_sets.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/removeAll.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
               <folding>
-                <element signature="e#207#218#0" expanded="true" />
-                <marker date="1551778226792" expanded="true" signature="304:786" ph="..." />
+                <element signature="e#185#203#0" expanded="true" />
+                <marker date="1551971423751" expanded="true" signature="1914:1920" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/get_spectraldata.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/get_words.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-150">
+              <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1552287629798" expanded="true" signature="2626:3525" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/distribute_sets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+              <folding>
+                <marker date="1551857883648" expanded="true" signature="292:768" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/import_words.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1269">
+              <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/keras_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-59">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -145,6 +253,7 @@
       <find>./</find>
       <find>.size</find>
       <find>shuff</find>
+      <find>keep</find>
     </findStrings>
     <replaceStrings>
       <replace>np</replace>
@@ -179,17 +288,17 @@
         <option value="$PROJECT_DIR$/import_words.py" />
         <option value="$PROJECT_DIR$/rawMfcc.py" />
         <option value="$PROJECT_DIR$/modules/envelope_data.py" />
-        <option value="$PROJECT_DIR$/modules/export_csv.py" />
-        <option value="$PROJECT_DIR$/modules/removeAll.sh" />
         <option value="$PROJECT_DIR$/modules/clean_data.py" />
-        <option value="$PROJECT_DIR$/modules/get_words.py" />
         <option value="$PROJECT_DIR$/modules/get_mfcc_array.py" />
         <option value="$PROJECT_DIR$/modules/normalize_data.py" />
-        <option value="$PROJECT_DIR$/modules/keras_test.py" />
-        <option value="$PROJECT_DIR$/modules/get_mfcc.py" />
-        <option value="$PROJECT_DIR$/modules/import_words.py" />
         <option value="$PROJECT_DIR$/modules/get_final_processed_data.py" />
+        <option value="$PROJECT_DIR$/modules/removeAll.sh" />
         <option value="$PROJECT_DIR$/modules/distribute_sets.py" />
+        <option value="$PROJECT_DIR$/modules/import_words.py" />
+        <option value="$PROJECT_DIR$/modules/get_mfcc.py" />
+        <option value="$PROJECT_DIR$/modules/export_csv.py" />
+        <option value="$PROJECT_DIR$/modules/keras_test.py" />
+        <option value="$PROJECT_DIR$/modules/get_words.py" />
       </list>
     </option>
   </component>
@@ -232,7 +341,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/sharan/Desktop/speechApp/modules/get_mfcc.py" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -255,29 +364,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.distribute_sets">
-    <configuration name="clean_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.keras_test">
+    <configuration name="removeAll.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <module name="project_speech" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/clean_data.py" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/removeAll.sh" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="distribute_sets" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="export_csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project_speech" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -289,28 +388,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/distribute_sets.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="get_final_processed_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="project_speech" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/get_final_processed_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/export_csv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -340,7 +418,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="normalize_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="get_words" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project_speech" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -352,7 +430,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/normalize_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/get_words.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="keras_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project_speech" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/keras_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -362,19 +461,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.get_final_processed_data" />
-      <item itemvalue="Python.clean_data" />
-      <item itemvalue="Python.normalize_data" />
+      <item itemvalue="Bash.removeAll.sh" />
+      <item itemvalue="Python.get_words" />
+      <item itemvalue="Python.keras_test" />
+      <item itemvalue="Python.export_csv" />
       <item itemvalue="Python.get_mfcc" />
-      <item itemvalue="Python.distribute_sets" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.distribute_sets" />
+        <item itemvalue="Python.keras_test" />
+        <item itemvalue="Python.get_words" />
+        <item itemvalue="Bash.removeAll.sh" />
+        <item itemvalue="Python.export_csv" />
         <item itemvalue="Python.get_mfcc" />
-        <item itemvalue="Python.get_final_processed_data" />
-        <item itemvalue="Python.normalize_data" />
-        <item itemvalue="Python.clean_data" />
       </list>
     </recent_temporary>
   </component>
@@ -395,7 +494,7 @@
     <frame x="20" y="43" width="1400" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.24945612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.24873096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.501006" side_tool="true" weight="0.24945612" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -503,59 +602,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/removeAll.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/normalize_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/get_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1550836739481" expanded="true" signature="2431:3221" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/envelope_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-465">
           <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/export_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="128" column="33" lean-forward="true" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
-          <folding>
-            <element signature="e#185#203#0" expanded="true" />
-            <marker date="1551764808116" expanded="true" signature="1881:1887" ph="..." />
-            <marker date="1551764808116" expanded="true" signature="1881:2481" ph="..." />
-            <marker date="1551764808116" expanded="true" signature="2478:2479" ph="..." />
-            <marker date="1551764808116" expanded="true" signature="2500:2505" ph="..." />
-            <marker date="1551764808116" expanded="true" signature="2500:2593" ph="..." />
-            <marker date="1551764808116" expanded="true" signature="2924:3094" ph="..." />
-            <marker date="1551764808116" expanded="true" signature="3092:3094" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,23 +615,6 @@
           <caret line="82" column="101" selection-start-line="82" selection-start-column="101" selection-end-line="82" selection-end-column="101" />
           <folding>
             <element signature="e#156#238#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/import_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="96" column="28" lean-forward="true" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/keras_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -596,13 +629,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/csvdata">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/export_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#93#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/normalize_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csvlabels">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/removeAll.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_spectraldata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/import_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1269">
+          <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+          <folding>
+            <element signature="e#185#203#0" expanded="true" />
+            <marker date="1551971423751" expanded="true" signature="1914:1920" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1552287629798" expanded="true" signature="2626:3525" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/distribute_sets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="312">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding>
-            <element signature="e#207#218#0" expanded="true" />
-            <marker date="1551778226792" expanded="true" signature="304:786" ph="..." />
+            <marker date="1551857883648" expanded="true" signature="292:768" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/keras_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
