@@ -3,39 +3,229 @@
   <component name="ChangeListManager">
     <list default="true" id="aeb38a18-76f6-4572-bbe9-12852ec400cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk13.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk14.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk28.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk48.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk52.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk53.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL-sentences/output2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL-sentences/output3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL-sentences/output9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk10.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk100.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk100.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk101.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk101.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk102.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk102.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk103.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk103.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk104.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk104.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk105.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk105.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk106.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk107.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk108.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk109.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk11.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk11.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk110.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk111.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk112.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk113.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk114.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk115.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk116.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk117.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk118.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk119.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk12.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk12.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk120.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk121.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk122.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk123.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk125.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk126.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk127.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk15.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk15.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk16.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk16.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk17.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk17.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk18.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk18.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk19.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk19.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk20.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk20.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk21.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk21.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk22.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk22.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk23.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk23.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk24.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk24.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk25.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk25.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk26.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk26.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk27.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk27.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk29.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk29.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk30.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk30.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk31.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk31.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk32.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk32.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk33.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk33.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk34.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk34.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk35.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk35.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk36.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk36.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk37.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk37.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk38.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk38.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk39.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk39.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk40.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk40.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk41.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk41.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk42.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk42.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk43.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk43.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk44.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk44.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk45.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk45.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk46.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk46.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk47.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk47.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk49.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk49.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk50.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk50.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk51.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk51.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk54.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk54.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LL_chunks/chunk55.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk55.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/distribute_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/distribute_sets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk57.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk57.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk59.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk59.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk61.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk61.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk64.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk64.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk65.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk65.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk66.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk66.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk67.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk67.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk68.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk68.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk69.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk69.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk70.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk70.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk71.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk71.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk73.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk73.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk74.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk74.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk75.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk75.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk76.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk76.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk77.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk77.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk78.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk78.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk79.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk79.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk8.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk80.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk80.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk81.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk81.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk83.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk83.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk84.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk84.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk85.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk85.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk86.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk86.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk87.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk87.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk88.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk88.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk89.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk89.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk9.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk9.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk90.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk90.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk91.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk91.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk92.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk92.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk93.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk93.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk94.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk94.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk95.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk95.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk96.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk96.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk97.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk97.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk98.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk98.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk99.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk99.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/get_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/get_words.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/keras_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/keras_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk1.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk10.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk102.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk102.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk103.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk103.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk104.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk104.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk105.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk105.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk106.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk106.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk107.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk107.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk109.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk109.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk11.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk11.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk110.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk110.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk111.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk111.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk112.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk112.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk113.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk113.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk114.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk114.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk12.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk12.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk13.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk13.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk14.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk14.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk15.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk15.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk16.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk16.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk17.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk17.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk18.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk18.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk19.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk19.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk2.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk20.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk20.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk21.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk22.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk23.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk23.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk24.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk24.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk25.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk25.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk26.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk26.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk27.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk27.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk28.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk28.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk29.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk29.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk30.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk30.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk31.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk31.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk32.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk32.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk34.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk34.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk35.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk35.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk37.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk37.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk38.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk38.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk39.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk39.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk40.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk40.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk41.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk41.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk42.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk42.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk43.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk43.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk44.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk44.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk45.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk45.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk46.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk46.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk47.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk47.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk48.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk48.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk49.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk49.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk50.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk50.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk51.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk51.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk52.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk52.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk53.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk53.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk54.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk54.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk55.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk55.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk56.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk56.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk57.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk57.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk58.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk58.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk60.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk60.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk61.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk61.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk62.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk62.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk63.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk63.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk64.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk64.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk65.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk65.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk68.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk68.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk69.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk69.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk7.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk71.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk71.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk72.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk72.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk73.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk73.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk74.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk74.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk75.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk75.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk76.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk76.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk77.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk77.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk78.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk78.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk79.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk79.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk8.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk80.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk80.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk81.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk81.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk82.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk82.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk86.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk86.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk87.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk87.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk88.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk88.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk89.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk89.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk9.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk9.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk90.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk90.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk91.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk91.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk92.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk92.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk93.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk93.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk94.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk94.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk95.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk95.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk96.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk96.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk97.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk97.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk98.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk98.wav" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +285,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="411" />
-          <entry key="py" value="20175" />
+          <entry key="py" value="22131" />
           <entry key="sh" value="272" />
           <entry key="txt" value="369" />
         </counts>
@@ -104,7 +294,7 @@
         <counts>
           <entry key="Bash" value="243" />
           <entry key="PLAIN_TEXT" value="29" />
-          <entry key="Python" value="20586" />
+          <entry key="Python" value="22542" />
           <entry key="Scratch" value="369" />
         </counts>
       </usages-collector>
@@ -114,19 +304,19 @@
           <entry key="csvdata" value="2" />
           <entry key="csvlabels" value="2" />
           <entry key="md" value="1" />
-          <entry key="py" value="223" />
-          <entry key="sh" value="10" />
+          <entry key="py" value="236" />
+          <entry key="sh" value="11" />
           <entry key="train" value="1" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="8" />
+          <entry key="Bash" value="9" />
           <entry key="CSV" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="223" />
+          <entry key="Python" value="236" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
@@ -138,34 +328,39 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/get_words.py">
+        <entry file="file://$PROJECT_DIR$/modules/rename_dir.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="465">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1552405426378" expanded="true" signature="2721:3670" ph="..." />
+                <element signature="e#0#9#0" expanded="true" />
+                <marker date="1552496198099" expanded="true" signature="161:771" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/import_words.py">
+        <entry file="file://$PROJECT_DIR$/stutteranalyser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2205">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
+            <state relative-caret-position="495">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <marker date="1552485886106" expanded="true" signature="206:211" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/export_csv.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/get_words.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="68">
+              <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
               <folding>
-                <element signature="e#93#111#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1552497274801" expanded="true" signature="1251:1265" ph="..." />
+                <marker date="1552497274801" expanded="true" signature="2841:3790" ph="..." />
               </folding>
             </state>
           </provider>
@@ -174,33 +369,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="142" selection-start-line="142" selection-end-line="142" />
+            <state relative-caret-position="179">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
               <folding>
                 <element signature="e#185#203#0" expanded="true" />
-                <marker date="1551971423751" expanded="true" signature="1914:1920" ph="..." />
+                <marker date="1552468350308" expanded="true" signature="1914:1920" ph="..." />
+                <marker date="1552468350308" expanded="true" signature="3619:3648" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/keras_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/normalize_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -227,6 +402,11 @@
       <find>shuff</find>
       <find>keep</find>
       <find>chec</find>
+      <find>check</find>
+      <find>absolutepath</find>
+      <find>absolut</find>
+      <find>absolutpa</find>
+      <find>absolute</find>
     </findStrings>
     <replaceStrings>
       <replace>np</replace>
@@ -267,11 +447,13 @@
         <option value="$PROJECT_DIR$/modules/get_final_processed_data.py" />
         <option value="$PROJECT_DIR$/modules/removeAll.sh" />
         <option value="$PROJECT_DIR$/modules/import_words.py" />
-        <option value="$PROJECT_DIR$/modules/get_mfcc.py" />
         <option value="$PROJECT_DIR$/modules/export_csv.py" />
         <option value="$PROJECT_DIR$/modules/distribute_sets.py" />
-        <option value="$PROJECT_DIR$/modules/get_words.py" />
+        <option value="$PROJECT_DIR$/modules/get_mfcc.py" />
         <option value="$PROJECT_DIR$/modules/keras_test.py" />
+        <option value="$PROJECT_DIR$/stutteranalyser.py" />
+        <option value="$PROJECT_DIR$/modules/rename_dir.py" />
+        <option value="$PROJECT_DIR$/modules/get_words.py" />
       </list>
     </option>
   </component>
@@ -337,7 +519,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.keras_test">
+  <component name="RunManager" selected="Python.get_words">
     <configuration name="removeAll.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <module name="project_speech" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -347,48 +529,6 @@
       <option name="PARENT_ENVS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/removeAll.sh" />
       <option name="PARAMETERS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="export_csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="project_speech" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/export_csv.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="get_mfcc" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="project_speech" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/get_mfcc.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="get_words" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -433,20 +573,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="rename_dir" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project_speech" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/rename_dir.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="stutteranalyser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project_speech" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stutteranalyser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Bash.removeAll.sh" />
       <item itemvalue="Python.get_words" />
       <item itemvalue="Python.keras_test" />
-      <item itemvalue="Python.export_csv" />
-      <item itemvalue="Python.get_mfcc" />
+      <item itemvalue="Python.stutteranalyser" />
+      <item itemvalue="Python.rename_dir" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.keras_test" />
         <item itemvalue="Python.get_words" />
+        <item itemvalue="Python.rename_dir" />
+        <item itemvalue="Python.stutteranalyser" />
+        <item itemvalue="Python.keras_test" />
         <item itemvalue="Bash.removeAll.sh" />
-        <item itemvalue="Python.export_csv" />
-        <item itemvalue="Python.get_mfcc" />
       </list>
     </recent_temporary>
   </component>
@@ -569,65 +751,12 @@
     <entry file="file://$PROJECT_DIR$/rawMfcc.py" />
     <entry file="file://$PROJECT_DIR$/testMfcc.py" />
     <entry file="file://$PROJECT_DIR$/modules/get_mfcc_array.py" />
-    <entry file="file://$PROJECT_DIR$/modules/envelope_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/clean_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="82" column="101" selection-start-line="82" selection-start-column="101" selection-end-line="82" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/get_final_processed_data.py" />
     <entry file="file://$PROJECT_DIR$/csvdata">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/csvlabels">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/get_spectraldata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/removeAll.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/distribute_sets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/get_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1552405426378" expanded="true" signature="2721:3670" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/import_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/export_csv.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -639,30 +768,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
+    <entry file="file://$PROJECT_DIR$/modules/normalize_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <element signature="e#185#203#0" expanded="true" />
-            <marker date="1551971423751" expanded="true" signature="1914:1920" ph="..." />
+            <element signature="e#102#120#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/normalize_data.py">
+    <entry file="file://$PROJECT_DIR$/modules/removeAll.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="180">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/clean_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="101" selection-start-line="82" selection-start-column="101" selection-end-line="82" selection-end-column="101" />
+          <folding>
+            <element signature="e#156#238#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/keras_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="1215">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <marker date="1552480255858" expanded="true" signature="208:210" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/import_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#276#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_spectraldata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#190#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/envelope_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/distribute_sets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <marker date="1552405203279" expanded="true" signature="291:767" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="e#185#203#0" expanded="true" />
+            <marker date="1552468350308" expanded="true" signature="1914:1920" ph="..." />
+            <marker date="1552468350308" expanded="true" signature="3619:3648" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/rename_dir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1552496198099" expanded="true" signature="161:771" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stutteranalyser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <marker date="1552485886106" expanded="true" signature="206:211" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1552497274801" expanded="true" signature="1251:1265" ph="..." />
+            <marker date="1552497274801" expanded="true" signature="2841:3790" ph="..." />
           </folding>
         </state>
       </provider>

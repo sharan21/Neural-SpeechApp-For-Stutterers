@@ -2,55 +2,106 @@ from keras.models import Sequential
 from keras.layers import Dense
 from distribute_sets import *
 from keras.utils import to_categorical
+from keras import optimizers
+from keras.models import model_from_json
 
 
 
-model = Sequential()
 
 
-model.add(Dense(units=20, activation='relu', input_dim=20))
-
-model.add(Dense(units=50, activation='relu'))
-
-model.add(Dense(units=30, activation='relu'))
-
-model.add(Dense(units=10, activation='relu'))
 
 
-model.add(Dense(activation='softmax', output_dim = 2))
 
 
-model.compile(loss='categorical_crossentropy',
-              optimizer='sgd',
-              metrics=['accuracy'])
 
-# import shuffled dataset and labels
+def makemodel():
 
-data, labels = getFinalNormalizedMfcc()
-print data.shape
-print type(data)
-print labels.shape
-print type(labels)
+    print ("Making model")
+    model = Sequential()
+    model.add(Dense(units=20, activation='relu', input_dim=20))
+    model.add(Dense(units=50, activation='relu'))
+    model.add(Dense(units=30, activation='relu'))
+    model.add(Dense(units=10, activation='relu'))
+    model.add(Dense(activation='softmax', output_dim=2))
 
-# distribute them to test and train
+    adam = optimizers.Nadam(lr=0.002, beta_1=0.9, beta_2=0.999, epsilon=None, schedule_decay=0.004)
 
-x_train, y_train, x_test, y_test = distribute(data, labels)
-print x_train.shape
-print y_train.shape
-print x_test.shape
-print y_test.shape
+    model.compile(loss='categorical_crossentropy',
+                  optimizer=adam,
+                  metrics=['accuracy'])
 
-y_train = to_categorical(y_train)
-y_test = to_categorical(y_test)
+    return model
 
-# x_train and y_train are Numpy arrays --just like in the Scikit-Learn API.
+def trainmodel():
+    print ("Training model")
+
+    trainedmodel = makemodel()
+    trainedmodel.fit(x_train, y_train, epochs=300, batch_size=16)
+
+    print ("Saving model")
+
+    model_json = trainedmodel.to_json()
+    with open("model.json", "w") as json_file:
+        json_file.write(model_json)
+    # serialize weights to HDF5
+    trainedmodel.save_weights("model.h5")
+    print("Saved model to disk")
 
 
-model.fit(x_train, y_train, epochs=1000, batch_size=16)
+    return trainedmodel
+
+def testmodel():
+    print ("Testing model")
+
+    trainedmodel = trainmodel()
+    score, acc = trainedmodel.evaluate(x_test, y_test, batch_size=16)
+    print ("Scores for Test set: {}".format(score))
+    print ("Accuracy for Test set: {}".format(acc))
+
+
+def predict(model):
+
+    classes = model.predict(x_test, batch_size=16)
+
+
+
+
+
+
+
+
+
+
+
 
 # model.train_on_batch(x_batch, y_batch)
 
-loss_and_metrics = model.evaluate(x_test, y_test, batch_size=16)
 
-classes = model.predict(x_test, batch_size=16)
+if __name__ == '__main__':
+
+    print("hello")
+
+    data, labels = getFinalNormalizedMfcc()
+    print data.shape
+    print type(data)
+    print labels.shape
+    print type(labels)
+
+    x_train, y_train, x_test, y_test = distribute(data, labels)
+    print x_train.shape
+    print y_train.shape
+    print x_test.shape
+    print y_test.shape
+
+    y_train = to_categorical(y_train)
+    y_test = to_categorical(y_test)
+
+    makemodel()
+
+    trainmodel()
+
+    # testmodel()
+
+
+
 

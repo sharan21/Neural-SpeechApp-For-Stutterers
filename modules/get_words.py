@@ -8,7 +8,6 @@ CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 44100
-frames = []
 p = pyaudio.PyAudio()
 RECORD_SECONDS = 10
 minimumWordSize = 500 # if the size of the word is <= this, reject the chunk
@@ -25,6 +24,7 @@ silence_thresh = -60 # default for LL
 
 
 def startRecording():
+    frames = []
 
     stream = p.open(format=FORMAT,
                     channels=CHANNELS,
@@ -43,9 +43,16 @@ def startRecording():
     stream.close()
     p.terminate()
 
+    return frames
 
-def storeWavFile():
-    waveFile = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
+def detectnoiselevel():
+
+    print
+
+
+def storeWavFile(frames, filename = WAVE_OUTPUT_FILENAME):
+    print file
+    waveFile = wave.open(filename, 'wb')
     waveFile.setnchannels(CHANNELS)
     waveFile.setsampwidth(p.get_sample_size(FORMAT))
     waveFile.setframerate(RATE)
@@ -56,9 +63,9 @@ def storeWavFile():
 
 
 
-def splitWavFileAndStore():
+def splitWavFileAndStore(filename = WAVE_OUTPUT_FILENAME):
 
-    line = AudioSegment.from_wav(WAVE_OUTPUT_FILENAME)
+    line = AudioSegment.from_wav(filename)
 
     audio_chunks = split_on_silence(line, min_silence_len=60, silence_thresh=-60)  # isolation of words is done here
 
@@ -125,9 +132,9 @@ def askUser():
 if __name__ == '__main__':
 
     askUser()
-    startRecording()
-    storeWavFile()
-    splitWavFileAndStore()
+    frames = startRecording() # get frames from user
+    storeWavFile(frames, WAVE_OUTPUT_FILENAME)
+    splitWavFileAndStore(WAVE_OUTPUT_FILENAME)
     
     
     
