@@ -9,7 +9,14 @@ model = Sequential()
 
 
 model.add(Dense(units=20, activation='relu', input_dim=20))
+
+model.add(Dense(units=50, activation='relu'))
+
 model.add(Dense(units=30, activation='relu'))
+
+model.add(Dense(units=10, activation='relu'))
+
+
 model.add(Dense(activation='softmax', output_dim = 2))
 
 
@@ -39,11 +46,11 @@ y_test = to_categorical(y_test)
 # x_train and y_train are Numpy arrays --just like in the Scikit-Learn API.
 
 
-model.fit(x_train, y_train, epochs=5, batch_size=20)
+model.fit(x_train, y_train, epochs=1000, batch_size=16)
 
 # model.train_on_batch(x_batch, y_batch)
 
-loss_and_metrics = model.evaluate(x_test, y_test, batch_size=128)
+loss_and_metrics = model.evaluate(x_test, y_test, batch_size=16)
 
-classes = model.predict(x_test, batch_size=128)
+classes = model.predict(x_test, batch_size=16)
 

@@ -3,35 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="aeb38a18-76f6-4572-bbe9-12852ec400cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL-sentences/output1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL-sentences/output1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL-sentences/output2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk10.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk11.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk11.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk12.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk12.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk13.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk13.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk14.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk14.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk15.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk15.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk16.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk16.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk17.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk17.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk7.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk8.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk9.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk9.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk13.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk14.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk28.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk48.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk52.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk53.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LL_chunks/chunk55.wav" beforeDir="false" afterPath="$PROJECT_DIR$/LL_chunks/chunk55.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/distribute_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/distribute_sets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/export_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/export_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/get_mfcc.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/get_mfcc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/get_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/get_words.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/import_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/import_words.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/keras_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/keras_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/removeAll.sh" beforeDir="false" afterPath="$PROJECT_DIR$/modules/removeAll.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nonLL-sentences/output1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL-sentences/output1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nonLL-sentences/output2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk1.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk10.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk11.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk11.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk12.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk12.wav" afterDir="false" />
@@ -39,21 +21,20 @@
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk14.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk14.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk15.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk15.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk16.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk16.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk17.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk18.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk18.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk19.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk2.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk20.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk20.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk21.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk21.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk22.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk22.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk22.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk23.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk23.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk24.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk24.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk25.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk25.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk26.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk26.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk3.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk4.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk5.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk6.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk8.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nonLL_chunks/chunk9.wav" beforeDir="false" afterPath="$PROJECT_DIR$/nonLL_chunks/chunk9.wav" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,21 +81,21 @@
     <session id="-1936584226">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="30" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="5" />
-          <entry key="project.open.time.3" value="7" />
+          <entry key="project.open.time.3" value="8" />
           <entry key="project.open.time.4" value="6" />
           <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="411" />
-          <entry key="py" value="20073" />
+          <entry key="py" value="20175" />
           <entry key="sh" value="272" />
           <entry key="txt" value="369" />
         </counts>
@@ -123,7 +104,7 @@
         <counts>
           <entry key="Bash" value="243" />
           <entry key="PLAIN_TEXT" value="29" />
-          <entry key="Python" value="20484" />
+          <entry key="Python" value="20586" />
           <entry key="Scratch" value="369" />
         </counts>
       </usages-collector>
@@ -133,7 +114,7 @@
           <entry key="csvdata" value="2" />
           <entry key="csvlabels" value="2" />
           <entry key="md" value="1" />
-          <entry key="py" value="215" />
+          <entry key="py" value="223" />
           <entry key="sh" value="10" />
           <entry key="train" value="1" />
           <entry key="txt" value="2" />
@@ -145,7 +126,7 @@
           <entry key="CSV" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="215" />
+          <entry key="Python" value="223" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
@@ -157,56 +138,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/removeAll.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
-              <folding>
-                <element signature="e#185#203#0" expanded="true" />
-                <marker date="1551971423751" expanded="true" signature="1914:1920" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/get_spectraldata.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/get_words.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+            <state relative-caret-position="405">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1552287629798" expanded="true" signature="2626:3525" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/distribute_sets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-              <folding>
-                <marker date="1551857883648" expanded="true" signature="292:768" ph="..." />
+                <marker date="1552405426378" expanded="true" signature="2721:3670" ph="..." />
               </folding>
             </state>
           </provider>
@@ -215,8 +153,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/import_words.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1269">
-              <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+            <state relative-caret-position="2205">
+              <caret line="152" selection-start-line="152" selection-end-line="152" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/export_csv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="e#93#111#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="142" selection-start-line="142" selection-end-line="142" />
+              <folding>
+                <element signature="e#185#203#0" expanded="true" />
+                <marker date="1551971423751" expanded="true" signature="1914:1920" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,11 +187,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/keras_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="60">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/normalize_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -254,6 +226,7 @@
       <find>.size</find>
       <find>shuff</find>
       <find>keep</find>
+      <find>chec</find>
     </findStrings>
     <replaceStrings>
       <replace>np</replace>
@@ -293,12 +266,12 @@
         <option value="$PROJECT_DIR$/modules/normalize_data.py" />
         <option value="$PROJECT_DIR$/modules/get_final_processed_data.py" />
         <option value="$PROJECT_DIR$/modules/removeAll.sh" />
-        <option value="$PROJECT_DIR$/modules/distribute_sets.py" />
         <option value="$PROJECT_DIR$/modules/import_words.py" />
         <option value="$PROJECT_DIR$/modules/get_mfcc.py" />
         <option value="$PROJECT_DIR$/modules/export_csv.py" />
-        <option value="$PROJECT_DIR$/modules/keras_test.py" />
+        <option value="$PROJECT_DIR$/modules/distribute_sets.py" />
         <option value="$PROJECT_DIR$/modules/get_words.py" />
+        <option value="$PROJECT_DIR$/modules/keras_test.py" />
       </list>
     </option>
   </component>
@@ -494,12 +467,12 @@
     <frame x="20" y="43" width="1400" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.24873096" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.24873096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.501006" side_tool="true" weight="0.24945612" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32928476" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32928476" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32928476" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994602" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -595,13 +568,7 @@
     <entry file="file://$PROJECT_DIR$/train" />
     <entry file="file://$PROJECT_DIR$/rawMfcc.py" />
     <entry file="file://$PROJECT_DIR$/testMfcc.py" />
-    <entry file="file://$PROJECT_DIR$/modules/get_mfcc_array.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_mfcc_array.py" />
     <entry file="file://$PROJECT_DIR$/modules/envelope_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-465">
@@ -613,31 +580,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-334">
           <caret line="82" column="101" selection-start-line="82" selection-start-column="101" selection-end-line="82" selection-end-column="101" />
-          <folding>
-            <element signature="e#156#238#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/get_final_processed_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="81" column="15" selection-start-line="81" selection-start-column="15" selection-end-line="81" selection-end-column="45" />
-          <folding>
-            <element signature="e#190#216#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_final_processed_data.py" />
     <entry file="file://$PROJECT_DIR$/csvdata">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/csvlabels">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_spectraldata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/removeAll.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/distribute_sets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1552405426378" expanded="true" signature="2721:3670" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/import_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2205">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/export_csv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="690">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#93#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
+          <folding>
+            <element signature="e#185#203#0" expanded="true" />
+            <marker date="1551971423751" expanded="true" signature="1914:1920" ph="..." />
           </folding>
         </state>
       </provider>
@@ -649,66 +657,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csvlabels">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/removeAll.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/get_spectraldata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/import_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1269">
-          <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/get_mfcc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
-          <folding>
-            <element signature="e#185#203#0" expanded="true" />
-            <marker date="1551971423751" expanded="true" signature="1914:1920" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/get_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1552287629798" expanded="true" signature="2626:3525" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/distribute_sets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <marker date="1551857883648" expanded="true" signature="292:768" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/keras_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="60">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

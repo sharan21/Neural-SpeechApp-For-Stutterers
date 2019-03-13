@@ -157,6 +157,9 @@ def getFinalNormalizedMfcc(): #shuffling occurs here
     return data, labels
 
 
+def flatten():
+    print("flattening")
+
 
 
 

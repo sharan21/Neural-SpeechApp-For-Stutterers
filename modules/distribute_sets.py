@@ -8,7 +8,6 @@ train= 0.8
 test = 0.2
 dev = 0
 
-
 def distribute(data, labels):
 
     print("distributing data to test and train arrays...")

@@ -11,7 +11,7 @@ RATE = 44100
 frames = []
 p = pyaudio.PyAudio()
 RECORD_SECONDS = 10
-minimumWordSize = 400 # if the size of the word is <= this, reject the chunk
+minimumWordSize = 500 # if the size of the word is <= this, reject the chunk
 maximumWordSize = 1300
 
 fileOffset = getNumberOfFiles() # makes sure that old chunks are not re-written
@@ -20,7 +20,7 @@ sentenceOffset = getNumberOfSentences() # makes sure that old sentences are not 
 WAVE_OUTPUT_FILENAME = "../LL-sentences/output"+str(sentenceOffset)+".wav"
 DEFAULT_CHUNKNAME = "../LL_chunks/chunk{}.wav"
 
-min_silence_len = 60 # default for LL
+min_silence_len = 30 # default for LL
 silence_thresh = -60 # default for LL
 
 
@@ -83,13 +83,11 @@ def splitWavFileAndStore():
 
 def checkChunk(chunk, i, minimumWordSize): # check if the chunk is valid or not, according to size of chunk.
 
-    status = False
-
-    if((len(chunk) <= minimumWordSize) or (len(chunk)>maximumWordSize and askUser() == 0)):
+    # (len(chunk) <= minimumWordSize) or (len(chunk) > maximumWordSize and askUser() == 0)
+    if((len(chunk) <= minimumWordSize ) or (len(chunk) > maximumWordSize)):
         print("rejected chunk{}".format(i))
-        status = True
 
-    return status
+    return ((len(chunk) <= minimumWordSize ) or (len(chunk) > maximumWordSize))
 
 def askUser():
 
@@ -112,9 +110,11 @@ def askUser():
         WAVE_OUTPUT_FILENAME = "../nonLL-sentences/output" + str(sentenceOffset) + ".wav"
         DEFAULT_CHUNKNAME = "../nonLL_chunks/chunk{}.wav"
         minimumWordSize = 300
+        print fileOffset
 
 
     else:
+        print fileOffset
         print("You are recording LL sentences...")
 
     return choice
