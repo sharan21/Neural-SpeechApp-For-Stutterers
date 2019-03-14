@@ -4,7 +4,6 @@ Standardizes the data, to mean 0 and unit variance distribution.
 
 '''
 
-import numpy as np
 from import_words import *
 import math
 

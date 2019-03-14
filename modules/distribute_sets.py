@@ -3,6 +3,7 @@ takes final numpydata sets and labels as inputs and distrubutes them into 2 sets
 input data is already shuffled, and matched with the corresponding shuffled label before distribution
 '''
 from get_mfcc import *
+import math
 
 train= 0.8
 test = 0.2

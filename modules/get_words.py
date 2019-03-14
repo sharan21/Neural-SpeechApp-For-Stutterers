@@ -10,20 +10,13 @@ CHANNELS = 1
 RATE = 44100
 p = pyaudio.PyAudio()
 RECORD_SECONDS = 10
-minimumWordSize = 500 # if the size of the word is <= this, reject the chunk
+minimumWordSize = 500  # if the size of the word is <= this, reject the chunk
 maximumWordSize = 1300
 
-fileOffset = getNumberOfFiles() # makes sure that old chunks are not re-written
-sentenceOffset = getNumberOfSentences() # makes sure that old sentences are not re-written
-
-WAVE_OUTPUT_FILENAME = "../LL-sentences/output"+str(sentenceOffset)+".wav"
-DEFAULT_CHUNKNAME = "../LL_chunks/chunk{}.wav"
-
-min_silence_len = 30 # default for LL
-silence_thresh = -60 # default for LL
 
 
-def startRecording():
+
+def startRecording(seconds = RECORD_SECONDS):
     frames = []
 
     stream = p.open(format=FORMAT,
@@ -33,7 +26,7 @@ def startRecording():
                     frames_per_buffer=CHUNK)
     print("* recording")
 
-    for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
+    for i in range(0, int(RATE / CHUNK * seconds)):
         data = stream.read(CHUNK)
         frames.append(data)
 
@@ -50,7 +43,7 @@ def detectnoiselevel():
     print
 
 
-def storeWavFile(frames, filename = WAVE_OUTPUT_FILENAME):
+def storeWavFile(frames, filename):
     print file
     waveFile = wave.open(filename, 'wb')
     waveFile.setnchannels(CHANNELS)
@@ -63,7 +56,7 @@ def storeWavFile(frames, filename = WAVE_OUTPUT_FILENAME):
 
 
 
-def splitWavFileAndStore(filename = WAVE_OUTPUT_FILENAME):
+def splitWavFileAndStore(filename):
 
     line = AudioSegment.from_wav(filename)
 
@@ -130,6 +123,19 @@ def askUser():
 
 
 if __name__ == '__main__':
+
+
+
+    fileOffset = getNumberOfFiles()  # makes sure that old chunks are not re-written
+    sentenceOffset = getNumberOfSentences()  # makes sure that old sentences are not re-written
+
+    WAVE_OUTPUT_FILENAME = "../LL-sentences/output" + str(sentenceOffset) + ".wav"
+    DEFAULT_CHUNKNAME = "../LL_chunks/chunk{}.wav"
+
+    min_silence_len = 30  # default for LL
+    silence_thresh = -60  # default for LL
+
+
 
     askUser()
     frames = startRecording() # get frames from user

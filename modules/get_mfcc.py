@@ -5,13 +5,14 @@ takes a wav file as input and outputs its 13 co-efficient MFCC.
 Only implemented for single path, single MFCC extraction and does not automatically work on whole directory.
 '''
 
-
 import numpy as np
-from dtw import dtw
-import librosa.display
 import os
-from normalize_data import *
+import librosa.display
 from get_spectraldata import *
+import matplotlib.pyplot as plt
+import dtw
+from normalize_data import normalizeSoundData
+from import_words import shuffle_in_unison_scary
 
 pre_emphasis = 0.97
 frame_size = 0.025
@@ -24,22 +25,14 @@ nonllpath = '../LL_chunks/chunk1.wav'
 llpath = '../nonLL_chunks/chunk1.wav'
 
 
-def librosaMFCC(nonllpath, llpath):
-    print ('Calculating both the MFCC')
-    y1, sr1 = librosa.load(nonllpath)
-    y2, sr2 = librosa.load(llpath)
+def librosaMfcc(path):
+    list = absoluteFilePaths(path)
+    data = []
 
-    mfcc1 = librosa.feature.mfcc(y1, sr1)
-    mfcc2 = librosa.feature.mfcc(y2, sr2)
+    for file in list:
+        data.append(average(findMfcc(file)))
 
-
-    # all mfccs have 20 co-efficients hence row length = mfcc1.shape[0] = 20
-
-    print (mfcc1.shape[1])
-    print (mfcc2.shape[1])
-    print (type(mfcc1))
-
-    return mfcc1, mfcc2
+    return np.array(data)
 
 def plotMfcc(mfcc1, mfcc2):
 
@@ -93,7 +86,7 @@ def getMfccAverage(): # return average of all mfccs for each word
 
     return np.array(data)
 
-def getAllMfcc(): # return average of all mfccs for each word
+def getndimMfcc(): # return average of all mfccs for each word
 
     # first creating the dir list
     pathlist = []
@@ -116,7 +109,8 @@ def getAllMfcc(): # return average of all mfccs for each word
 
 def absoluteFilePaths(directory):
    for dirpath,_,filenames in os.walk(directory):
-       filenames.remove('.DS_Store')
+       if ('.DS_Store' in filenames):
+        filenames.remove('.DS_Store')
        for f in filenames:
            yield os.path.abspath(os.path.join(dirpath, f))
 
@@ -144,7 +138,6 @@ def getFinalNormalizedMfcc(): #shuffling occurs here
     data = getMfccAverage()
 
     normalizeSoundData(data)
-
 
 
     _, labels = getTrainingData()

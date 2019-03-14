@@ -1,26 +1,90 @@
-
+from modules.get_words import startRecording, storeWavFile
+from pydub import AudioSegment
+from pydub.silence import split_on_silence
+import os
+from modules.get_mfcc import absoluteFilePaths
+import subprocess
+from modules.get_mfcc import librosaMfcc
+from modules.keras_test import loadandpredict
 
 class stutteranalyser():
 
+    # paths to on disk data
+
+    path = './temp/test.wav'
+    pathforchunks = './tempchunks'
+
+    pathtomodeljson = './modules/model.json'
+    pathtomodelh5 = './modules/model.h5'
+
+    frames = [] # contains the sounddata to inspect
+
+    #used to build statistics
 
     wordcount = 0
     sentencecount = 0
     fluentcount = 0
     disfluentcount = 0
     totalsilence = 0
-    totalsound = 0
+    totalsoundseconds = 10
     llcount = 0
     nonllcount = 0
-    instance = ""
+
+    instancename = "" # primary identifier of the object
 
 
-    def __init__(self):
+    def __init__(self, name = 'defaultname'):
         print ("init running")
+        self.instancename = name
+
 
 
     def getSound(self):
 
-        print ("recording sound")
+        frames = startRecording()
+        storeWavFile(frames, self.path)
+
+        line = AudioSegment.from_wav(self.path)
+
+        audio_chunks = split_on_silence(line, min_silence_len=60, silence_thresh=-60)  # isolation of words is done here
+
+
+        for i, chunk in enumerate(audio_chunks):  # audio_chunks is a python list
+
+            out_file = "./tempchunks/chunk{}.wav".format(i)
+            print ("exporting", out_file)
+            chunk.export(out_file, format="wav")
+
+        print("Total number of words:", i + 1)
+
+        self.wordcount = i + 1
+
+    def predict(self):
+
+        print ("Importing Averages Mfccs...")
+        data = librosaMfcc("./tempchunks")
+        print (data.shape)
+        print ("Done importing")
+
+
+        loadandpredict(self.pathtomodeljson, self.pathtomodelh5, data)
+
+
+
+
+
+
+
+    def __del__(self):
+
+        print ("killing object{}".format(self.instancename))
+
+        subprocess.call("./empty_temp.sh")
+
+        print ("emptied chunks from temp")
+
+
+
 
 
     def printinfo(self):
@@ -37,8 +101,8 @@ class stutteranalyser():
 
 
 
-
-
 if __name__ == '__main__':
 
-    sentence = stutteranalyser()
+    sentence = stutteranalyser("test")
+    sentence.getSound()
+    sentence.predict()

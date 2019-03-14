@@ -7,13 +7,6 @@ from keras.models import model_from_json
 
 
 
-
-
-
-
-
-
-
 def makemodel():
 
     print ("Making model")
@@ -32,6 +25,7 @@ def makemodel():
 
     return model
 
+
 def trainmodel():
     print ("Training model")
 
@@ -43,12 +37,11 @@ def trainmodel():
     model_json = trainedmodel.to_json()
     with open("model.json", "w") as json_file:
         json_file.write(model_json)
-    # serialize weights to HDF5
     trainedmodel.save_weights("model.h5")
     print("Saved model to disk")
 
-
     return trainedmodel
+
 
 def testmodel():
     print ("Testing model")
@@ -64,12 +57,34 @@ def predict(model):
     classes = model.predict(x_test, batch_size=16)
 
 
+def loadandpredict(pathtojson, pathtoh5, data):
+
+    print("using model: {}".format(pathtojson))
+
+    # load json and create model
+    json_file = open(pathtojson, 'r')
+    loaded_model_json = json_file.read()
+    json_file.close()
+    loaded_model = model_from_json(loaded_model_json)
+
+    #load weights into new model
+
+    loaded_model.load_weights(pathtoh5)
+    print("Loaded model from disk")
 
 
+    loaded_model.compile(loss='categorical_crossentropy',
+                  optimizer='adam',
+                  metrics=['accuracy'])
 
+    print ("compiled the loaded model with cat. cross entropy with adam optim...")
 
+    classes = loaded_model.predict(data)
 
+    print ("done predicting, printing")
 
+    for instance in classes:
+        print instance
 
 
 

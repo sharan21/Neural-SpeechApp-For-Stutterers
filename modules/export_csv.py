@@ -2,12 +2,8 @@
 
 Imports processed features and exports as CSV data to train-data, to feed into NN
 '''
+from import_words import getNumberOfSentences
 
-
-import numpy as np
-from import_words import *
-from clean_data import *
-from get_mfcc import *
 from distribute_sets import *
 
 

@@ -12,7 +12,7 @@ def rename(path):
     list = absoluteFilePaths(path)
 
     print list
-    i=1
+    i = 1
 
     for filename in list:
 

@@ -6,7 +6,7 @@ Also implements exponential weighted average to smoothen the data.
 
 '''
 
-from import_words import importAllFromDir,importAll, plotAll, getNumberOfSentences
+from import_words import importAllFromDir, plotAll
 import numpy as np
 import os
 

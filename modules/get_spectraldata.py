@@ -2,10 +2,9 @@
 Only run when you have finished recording your dataset using get_words
 '''
 
-from import_words import *
-from clean_data import *
-from normalize_data import *
 from get_mfcc import *
+import numpy as np
+from import_words import importAllFromDir
 
 
 def getTrainingData():
