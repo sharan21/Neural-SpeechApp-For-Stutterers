@@ -1,9 +1,13 @@
 from keras.models import Sequential
-from keras.layers import Dense
+from keras.layers import Dense, Dropout, BatchNormalization
 from distribute_sets import *
 from keras.utils import to_categorical
-from keras import optimizers
+from keras import *
 from keras.models import model_from_json
+from keras.callbacks import TensorBoard
+from keras import regularizers
+
+log_dir = './logs'
 
 
 
@@ -11,6 +15,48 @@ def makemodel():
 
     print ("Making model")
     model = Sequential()
+
+    # BatchNormalization(axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True,
+    #                                 beta_initializer='zeros', gamma_initializer='ones', moving_mean_initializer='zeros',
+    #                                 moving_variance_initializer='ones', beta_regularizer=None, gamma_regularizer=None,
+    #                                 beta_constraint=None, gamma_constraint=None)
+
+    model.add(Dense(units=10, activation='relu', input_dim=20))
+    model.add(Dense(units=20, activation='relu'))
+
+    # model.add(Dropout(0.5))
+    # model.add(Dropout(0.5))
+
+    model.add(Dense(activation='softmax', output_dim=2))
+
+    adam = optimizers.Nadam(lr=0.002, beta_1=0.9, beta_2=0.999, epsilon=None, schedule_decay=0.004)
+
+    model.compile(loss='categorical_crossentropy',
+                  optimizer=adam,
+                  metrics=['accuracy'])
+
+    return model
+
+
+def makemodel2():
+
+    print ("Making model")
+    model = Sequential()
+
+    BatchNormalization(
+        axis=-1, momentum=0.99,
+        epsilon=0.001,
+        center=True,
+        scale=True,
+        beta_initializer='zeros',
+        gamma_initializer='ones',
+        moving_mean_initializer='zeros',
+        moving_variance_initializer='ones',
+        beta_regularizer=None,
+        gamma_regularizer=None,
+        beta_constraint=None,
+        gamma_constraint=None)
+
     model.add(Dense(units=20, activation='relu', input_dim=20))
     model.add(Dense(units=50, activation='relu'))
     model.add(Dense(units=30, activation='relu'))
@@ -26,35 +72,53 @@ def makemodel():
     return model
 
 
-def trainmodel():
+
+def trainmodel(pathtojson, pathtoh5):
     print ("Training model")
 
-    trainedmodel = makemodel()
+    trainedmodel = makemodel2()
     trainedmodel.fit(x_train, y_train, epochs=300, batch_size=16)
 
     print ("Saving model")
 
     model_json = trainedmodel.to_json()
-    with open("model.json", "w") as json_file:
+    with open(pathtojson, "w") as json_file:
         json_file.write(model_json)
-    trainedmodel.save_weights("model.h5")
+    trainedmodel.save_weights(pathtoh5)
     print("Saved model to disk")
 
-    return trainedmodel
-
-
-def testmodel():
-    print ("Testing model")
-
-    trainedmodel = trainmodel()
     score, acc = trainedmodel.evaluate(x_test, y_test, batch_size=16)
     print ("Scores for Test set: {}".format(score))
     print ("Accuracy for Test set: {}".format(acc))
 
+    return trainedmodel
 
-def predict(model):
 
-    classes = model.predict(x_test, batch_size=16)
+def testmodel(pathtojson, pathtoh5, data, labels ):
+    print ("Testing model")
+
+    print("using model: {}".format(pathtojson))
+
+    # load json and create model
+    json_file = open(pathtojson, 'r')
+    loaded_model_json = json_file.read()
+    json_file.close()
+    loaded_model = model_from_json(loaded_model_json)
+
+    loaded_model.load_weights(pathtoh5)
+    print("Loaded model from disk")
+
+    loaded_model.compile(loss='categorical_crossentropy',
+                         optimizer='adam',
+                         metrics=['accuracy'])
+    print data.shape
+
+    labels = to_categorical(labels)
+    score, acc = loaded_model.evaluate(data, labels, batch_size=16)
+    print ("Scores for Test set: {}".format(score))
+    print ("Accuracy for Test set: {}".format(acc))
+
+
 
 
 def loadandpredict(pathtojson, pathtoh5, data):
@@ -79,17 +143,25 @@ def loadandpredict(pathtojson, pathtoh5, data):
 
     print ("compiled the loaded model with cat. cross entropy with adam optim...")
 
+    print ("shape of data {}".format(data.shape))
+
     classes = loaded_model.predict(data)
 
     print ("done predicting, printing")
 
+
     for instance in classes:
+
         print instance
+        print (parseinstance(instance))
 
 
 
 
 # model.train_on_batch(x_batch, y_batch)
+
+def parseinstance(instance):
+    return "ll" if instance[1]>instance[0] else "nonll"
 
 
 if __name__ == '__main__':
@@ -111,11 +183,15 @@ if __name__ == '__main__':
     y_train = to_categorical(y_train)
     y_test = to_categorical(y_test)
 
-    makemodel()
+    pathtojson = './models/average3.json'
+    pathtoh5 = './models/average3.h5'
 
-    trainmodel()
 
-    # testmodel()
+    trainmodel(pathtojson, pathtoh5)
+
+    # testmodel(pathtojson, pathtoh5, data, labels)
+
+    # loadandpredict('./model.json','./model.h5',data)
 
 
 

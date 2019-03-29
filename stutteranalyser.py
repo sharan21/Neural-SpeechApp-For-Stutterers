@@ -1,4 +1,4 @@
-from modules.get_words import startRecording, storeWavFile
+from modules.get_words import startRecording, storeWavFile, checkChunk
 from pydub import AudioSegment
 from pydub.silence import split_on_silence
 import os
@@ -6,6 +6,7 @@ from modules.get_mfcc import absoluteFilePaths
 import subprocess
 from modules.get_mfcc import librosaMfcc
 from modules.keras_test import loadandpredict
+from modules.normalize_data import normalizeSoundData
 
 class stutteranalyser():
 
@@ -14,8 +15,8 @@ class stutteranalyser():
     path = './temp/test.wav'
     pathforchunks = './tempchunks'
 
-    pathtomodeljson = './modules/model.json'
-    pathtomodelh5 = './modules/model.h5'
+    pathtomodeljson = './modules/models/average2.json'
+    pathtomodelh5 = './modules/models/average2.h5'
 
     frames = [] # contains the sounddata to inspect
 
@@ -51,6 +52,9 @@ class stutteranalyser():
 
         for i, chunk in enumerate(audio_chunks):  # audio_chunks is a python list
 
+            if (checkChunk(chunk,i) or i == 0):  #
+                continue
+
             out_file = "./tempchunks/chunk{}.wav".format(i)
             print ("exporting", out_file)
             chunk.export(out_file, format="wav")
@@ -62,8 +66,9 @@ class stutteranalyser():
     def predict(self):
 
         print ("Importing Averages Mfccs...")
-        data = librosaMfcc("./tempchunks")
-        print (data.shape)
+        data = librosaMfcc(self.pathforchunks)
+        data = normalizeSoundData(data)
+        print data
         print ("Done importing")
 
 
@@ -71,20 +76,13 @@ class stutteranalyser():
 
 
 
-
-
-
-
     def __del__(self):
 
-        print ("killing object{}".format(self.instancename))
+        print ("killing object '{}'".format(self.instancename))
 
-        subprocess.call("./empty_temp.sh")
+        # subprocess.call("./empty_temp.sh")
 
-        print ("emptied chunks from temp")
-
-
-
+        # print ("emptied chunks from temp")
 
 
     def printinfo(self):
@@ -94,7 +92,6 @@ class stutteranalyser():
 
     def saveinfo(self):
         print ("saving info of object")
-
 
 
 

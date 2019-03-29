@@ -94,7 +94,7 @@ def importAllFromDir(path): # better import function to import them all
         soundData.append(np.absolute(data))
         print("imported {}".format(list[i]))
 
-    return soundData, labels
+    return np.array(soundData), labels
 
 
 

@@ -29,8 +29,14 @@ def librosaMfcc(path):
     list = absoluteFilePaths(path)
     data = []
 
+
     for file in list:
-        data.append(average(findMfcc(file)))
+        mfcc = average(findMfcc(file))
+        # deltah = delta(mfcc)
+        #temp = np.concatenate((mfcc, deltah))
+        data.append(mfcc)
+
+
 
     return np.array(data)
 
@@ -67,7 +73,7 @@ def padMfcc(mfcc, fixedsize = 30):
 
     print (mfcc.shape)
 
-def getMfccAverage(): # return average of all mfccs for each word
+def getMfccAverage(): # return average of all mfccs for each word in numpy array
 
     # first creating the dir list
     pathlist = []
@@ -81,8 +87,10 @@ def getMfccAverage(): # return average of all mfccs for each word
 
     for path in pathlist:
         print ("finding mfcc of", path)
+
         data.append(average(findMfcc(path)))
-        print len(data[-1])
+
+        # print len(data[-1])
 
     return np.array(data)
 
@@ -100,7 +108,32 @@ def getndimMfcc(): # return average of all mfccs for each word
 
     for path in pathlist:
         print ("finding mfcc of", path)
+
         data.append(findMfcc(path))
+        print len(data[-1])
+
+    return np.array(data)
+
+def getMfccDelta():
+    # first creating the dir list
+    print ("hello")
+    pathlist = []
+
+    pathlist.extend(absoluteFilePaths('../LL_chunks'))
+    pathlist.extend(absoluteFilePaths('../nonLL_chunks'))
+
+    print ("path list is", pathlist)
+
+    data = []
+
+    for path in pathlist:
+        print ("finding mfcc of", path)
+        # mfcc = average((findMfcc(path)))
+        deltah = average(delta(findMfcc(path)))
+        # temp = np.concatenate((deltah, mfcc))
+        print deltah
+        data.append(deltah)
+
         print len(data[-1])
 
     return np.array(data)
@@ -129,13 +162,17 @@ def average(mfcc):
     for i in range(mfcc.shape[0]):
         ave.append(np.mean(mfcc[i,:]))
     ave_numpy = np.array(ave)
-    print (ave_numpy)
+    # print (ave_numpy)
 
     return ave_numpy
 
 def getFinalNormalizedMfcc(): #shuffling occurs here
 
     data = getMfccAverage()
+    # data = deltaplusmfcc()
+    # data = getMfccSum()
+    # data = getMfccDelta()
+    print data.size
 
     normalizeSoundData(data)
 
@@ -154,6 +191,56 @@ def flatten():
     print("flattening")
 
 
+def delta(mfcc):
+    '''
+
+    :param mfcc: input mfcc 2d array
+    :return: first dervative of mfcc 2d array
+    '''
+    print ("finding the delta")
+    return librosa.feature.delta(mfcc)
+
+def sum(mfcc): #over time axis or coloum wise
+
+    data = np.array(mfcc) # if mfcc data is not already in numpy
+
+    return data.sum(axis=1)
+
+def getlabels():
+    '''
+
+    :return: gets non shuffled labels as numpy array of size [training samples, 1], 1 for LL 0 for Non LL
+    '''
+
+
+def getMfccSum():
+    pathlist = []
+
+    pathlist.extend(absoluteFilePaths('../LL_chunks'))
+    pathlist.extend(absoluteFilePaths('../nonLL_chunks'))
+
+    print ("path list is", pathlist)
+
+    data = []
+
+    for path in pathlist:
+        print ("finding mfcc of", path)
+
+        data.append(sum(findMfcc(path)))
+
+        print len(data[-1])
+
+    return np.array(data)
+
+
+
+
+def getmfccDoubleDelta():
+    print
+
+
+
+
 
 
 if __name__ == '__main__':
@@ -164,7 +251,15 @@ if __name__ == '__main__':
     # plotMfcc(nonllmfcc, llmfcc)
     # computeDistace(nonllmfcc, llmfcc)
 
+
     data, labels = getFinalNormalizedMfcc()
+    print data[1:10, :]
+    print data.size
+    print type(data)
+    # print data[500:,:]
+
+    # deltaplusmfcc()
+
 
 
 

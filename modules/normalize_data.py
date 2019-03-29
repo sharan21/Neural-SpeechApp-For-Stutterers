@@ -18,6 +18,8 @@ def normalizeSoundData(soundDataHere): # takes numpy array and normalizes it
         soundDataHere[i] = (soundDataHere[i] - mean) / std
         print("done")
 
+    return soundDataHere
+
 def assertZeroMean(soundDataHere):
     for sound in soundDataHere:
         # print(np.mean(sound))
