@@ -1,7 +1,6 @@
 from modules.get_words import startRecording, storeWavFile, checkChunk
 from pydub import AudioSegment
 from pydub.silence import split_on_silence
-import os
 from modules.get_mfcc import absoluteFilePaths
 import subprocess
 from modules.get_mfcc import librosaMfcc
@@ -15,28 +14,29 @@ class stutteranalyser():
     path = './temp/test.wav'
     pathforchunks = './tempchunks'
 
-    pathtomodeljson = './modules/models/average2.json'
-    pathtomodelh5 = './modules/models/average2.h5'
+    pathtomodeljson = './modules/models/average9.json'
+    pathtomodelh5 = './modules/models/average9.h5'
 
     frames = [] # contains the sounddata to inspect
 
-    #used to build statistics
+    pausedurations = []
 
     wordcount = 0
     sentencecount = 0
-    fluentcount = 0
-    disfluentcount = 0
     totalsilence = 0
-    totalsoundseconds = 10
+    totalduration = 0
     llcount = 0
     nonllcount = 0
+    llratio = 0
 
-    instancename = "" # primary identifier of the object
+    instancename = ""
 
 
-    def __init__(self, name = 'defaultname'):
-        print ("init running")
+    def __init__(self, name = 'defaultname', duration = 10):
+
+        # print ("init running")
         self.instancename = name
+        self.totalduration = duration
 
 
 
@@ -52,27 +52,29 @@ class stutteranalyser():
 
         for i, chunk in enumerate(audio_chunks):  # audio_chunks is a python list
 
-            if (checkChunk(chunk,i) or i == 0):  #
+            if (checkChunk(chunk,i, 50, 3000) or i == 0):  #
                 continue
 
             out_file = "./tempchunks/chunk{}.wav".format(i)
-            print ("exporting", out_file)
+            # print ("exporting", out_file)
             chunk.export(out_file, format="wav")
 
-        print("Total number of words:", i + 1)
+        # print("Total number of words:", i + 1)
 
         self.wordcount = i + 1
 
     def predict(self):
 
-        print ("Importing Averages Mfccs...")
+        # print ("Importing Averages Mfccs...")
         data = librosaMfcc(self.pathforchunks)
         data = normalizeSoundData(data)
-        print data
-        print ("Done importing")
+        # print data
+        # print ("Done importing")
 
 
-        loadandpredict(self.pathtomodeljson, self.pathtomodelh5, data)
+        classes = loadandpredict(self.pathtomodeljson, self.pathtomodelh5, data)
+
+        return classes
 
 
 
@@ -82,7 +84,7 @@ class stutteranalyser():
 
         # subprocess.call("./empty_temp.sh")
 
-        # print ("emptied chunks from temp")
+        print ("emptied chunks from temp")
 
 
     def printinfo(self):
@@ -93,6 +95,17 @@ class stutteranalyser():
     def saveinfo(self):
         print ("saving info of object")
 
+    def statistics(self):
+
+        print ("building statistics on last 10 seconds...")
+        classes = self.predict()
+        self.wordcount = float(len(classes))
+        self.llcount = float(len([classes[i] for i in range(len(classes)) if(classes[i,0] < classes[i,1])]))
+        # self.nonllcount = self.wordcount - self.llcount
+        self.llratio = self.llcount/self.wordcount
+
+        print("{}% fluency in your speech".format(self.llratio*100))
+
 
 
 
@@ -101,5 +114,5 @@ class stutteranalyser():
 if __name__ == '__main__':
 
     sentence = stutteranalyser("test")
-    sentence.getSound()
-    sentence.predict()
+    # sentence.getSound()
+    sentence.statistics()

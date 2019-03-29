@@ -2,11 +2,10 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, BatchNormalization
 from distribute_sets import *
 from keras.utils import to_categorical
-from keras import *
 from keras.models import model_from_json
 from keras.callbacks import TensorBoard
 from keras import regularizers
-
+from keras import optimizers
 log_dir = './logs'
 
 
@@ -58,12 +57,17 @@ def makemodel2():
         gamma_constraint=None)
 
     model.add(Dense(units=20, activation='relu', input_dim=20))
-    model.add(Dense(units=50, activation='relu'))
-    model.add(Dense(units=30, activation='relu'))
-    model.add(Dense(units=10, activation='relu'))
+    model.add(Dropout(0.3))
+    model.add(Dense(units=80, activation='relu'))
+    model.add(Dropout(0.3))
+    model.add(Dense(units=40, activation='relu'))
+    model.add(Dropout(0.3))
+    model.add(Dense(units=20, activation='relu'))
+    model.add(Dropout(0.3))
+
     model.add(Dense(activation='softmax', output_dim=2))
 
-    adam = optimizers.Nadam(lr=0.002, beta_1=0.9, beta_2=0.999, epsilon=None, schedule_decay=0.004)
+    adam = optimizers.Nadam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, schedule_decay=0.004)
 
     model.compile(loss='categorical_crossentropy',
                   optimizer=adam,
@@ -77,7 +81,7 @@ def trainmodel(pathtojson, pathtoh5):
     print ("Training model")
 
     trainedmodel = makemodel2()
-    trainedmodel.fit(x_train, y_train, epochs=300, batch_size=16)
+    trainedmodel.fit(x_train, y_train, epochs=400, batch_size=16)
 
     print ("Saving model")
 
@@ -123,7 +127,7 @@ def testmodel(pathtojson, pathtoh5, data, labels ):
 
 def loadandpredict(pathtojson, pathtoh5, data):
 
-    print("using model: {}".format(pathtojson))
+    # print("using model: {}".format(pathtojson))
 
     # load json and create model
     json_file = open(pathtojson, 'r')
@@ -134,26 +138,28 @@ def loadandpredict(pathtojson, pathtoh5, data):
     #load weights into new model
 
     loaded_model.load_weights(pathtoh5)
-    print("Loaded model from disk")
+    # print("Loaded model from disk")
 
 
     loaded_model.compile(loss='categorical_crossentropy',
                   optimizer='adam',
                   metrics=['accuracy'])
 
-    print ("compiled the loaded model with cat. cross entropy with adam optim...")
+    # print ("compiled the loaded model with cat. cross entropy with adam optim...")
 
-    print ("shape of data {}".format(data.shape))
+    # print ("shape of data {}".format(data.shape))
 
     classes = loaded_model.predict(data)
 
-    print ("done predicting, printing")
+    # print ("done predicting, printing")
 
 
     for instance in classes:
 
         print instance
         print (parseinstance(instance))
+
+    return classes
 
 
 
@@ -183,13 +189,13 @@ if __name__ == '__main__':
     y_train = to_categorical(y_train)
     y_test = to_categorical(y_test)
 
-    pathtojson = './models/average3.json'
-    pathtoh5 = './models/average3.h5'
+    pathtojson = './models/average9.json'
+    pathtoh5 = './models/average9.h5'
 
 
-    trainmodel(pathtojson, pathtoh5)
+    # trainmodel(pathtojson, pathtoh5)
 
-    # testmodel(pathtojson, pathtoh5, data, labels)
+    testmodel(pathtojson, pathtoh5, data, labels)
 
     # loadandpredict('./model.json','./model.h5',data)
 

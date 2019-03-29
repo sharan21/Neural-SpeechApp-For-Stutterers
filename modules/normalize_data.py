@@ -9,14 +9,14 @@ import math
 
 def normalizeSoundData(soundDataHere): # takes numpy array and normalizes it
 
-    print("normalizing the sound data, for {} files".format(len(soundDataHere)))
+    # print("normalizing the sound data, for {} files".format(len(soundDataHere)))
 
     for i in range(len(soundDataHere)):
-        print("normalizing the sound data, for {}st chunk".format(i))
+        # print("normalizing the sound data, for {}st chunk".format(i))
         mean = np.mean(soundDataHere[i])
         std = np.std(soundDataHere[i])
         soundDataHere[i] = (soundDataHere[i] - mean) / std
-        print("done")
+        # print("done")
 
     return soundDataHere
 

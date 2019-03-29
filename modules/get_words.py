@@ -27,13 +27,13 @@ def startRecording(seconds = RECORD_SECONDS):
                     rate=RATE,
                     input=True,
                     frames_per_buffer=CHUNK)
-    print("* recording")
+    # print("* recording")
 
     for i in range(0, int(RATE / CHUNK * seconds)):
         data = stream.read(CHUNK)
         frames.append(data)
 
-    print("* done recording")
+    # print("* done recording")
 
     stream.stop_stream()
     stream.close()
@@ -67,7 +67,7 @@ def storeWavFile(frames, filename, verbosity = True):
     waveFile.writeframes(b''.join(frames))
     waveFile.close()
 
-    print ("Done recording, stored in output.wav") if verbosity else 0
+    # print ("Done recording, stored in output.wav") if verbosity else 0
 
 
 

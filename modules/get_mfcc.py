@@ -157,7 +157,7 @@ def findMfcc(path):
 
 def average(mfcc):
     # take an n coefficient mfcc for multiple samples and finds its nx1 size average array
-    print ("averaging mfcc")
+    # print ("averaging mfcc")
     ave = []
     for i in range(mfcc.shape[0]):
         ave.append(np.mean(mfcc[i,:]))

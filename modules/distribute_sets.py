@@ -5,8 +5,8 @@ input data is already shuffled, and matched with the corresponding shuffled labe
 from get_mfcc import *
 import math
 
-train= 0.65
-test = 0.35
+train= 0.9
+test = 0.1
 dev = 0
 
 def distribute(data, labels):
