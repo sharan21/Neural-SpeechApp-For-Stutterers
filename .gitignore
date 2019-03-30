@@ -3,3 +3,7 @@
 .DS_Store
 LL_chunks
 nonLL_chunks
+*.pyc
+*.wav
+
+

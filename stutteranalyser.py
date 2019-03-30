@@ -9,15 +9,13 @@ from modules.normalize_data import normalizeSoundData
 
 class stutteranalyser():
 
-    # paths to on disk data
-
-    path = './temp/test.wav'
+    path = './tempsentences/test.wav'
     pathforchunks = './tempchunks'
 
     pathtomodeljson = './modules/models/average9.json'
     pathtomodelh5 = './modules/models/average9.h5'
 
-    frames = [] # contains the sounddata to inspect
+    frames = []
 
     pausedurations = []
 
@@ -28,6 +26,8 @@ class stutteranalyser():
     llcount = 0
     nonllcount = 0
     llratio = 0
+    status = False
+    llscore = 0
 
     instancename = ""
 
@@ -69,50 +69,68 @@ class stutteranalyser():
         data = librosaMfcc(self.pathforchunks)
         data = normalizeSoundData(data)
         # print data
-        # print ("Done importing")
-
 
         classes = loadandpredict(self.pathtomodeljson, self.pathtomodelh5, data)
 
         return classes
 
 
-
     def __del__(self):
 
         print ("killing object '{}'".format(self.instancename))
 
-        # subprocess.call("./empty_temp.sh")
+        subprocess.call("./modules/empty_temp.sh")
 
         print ("emptied chunks from temp")
 
 
-    def printinfo(self):
-        print ("printing statistics of uttered speech:")
-
-
-
-    def saveinfo(self):
-        print ("saving info of object")
-
     def statistics(self):
 
         print ("building statistics on last 10 seconds...")
+
         classes = self.predict()
         self.wordcount = float(len(classes))
+
         self.llcount = float(len([classes[i] for i in range(len(classes)) if(classes[i,0] < classes[i,1])]))
-        # self.nonllcount = self.wordcount - self.llcount
+
+        self.nonllcount = self.wordcount - self.llcount
         self.llratio = self.llcount/self.wordcount
+
+
+        self.status= True if self.llratio > 0.8 else False
 
         print("{}% fluency in your speech".format(self.llratio*100))
 
+    def savestatistics(self):
+
+        print ("saving stats into the disk")
+
+        f = open("./logs/stats.txt", "a")
+
+        f.write("Name of Instance : '{}' \n".format(self.instancename))
+
+        f.write("Total number of words: {} \n".format(self.wordcount))
+
+        f.write("Number of LL words: {} \n ".format(self.llcount))
+
+        f.write("LL ratio: {} \n".format(self.llratio))
+
+        f.write("")
 
 
+    def clearlogs(self):
+
+        print ("clearing logs...")
+
+        f = open("./logs/stats.txt", "w")
+        f.write("")
 
 
 
 if __name__ == '__main__':
 
-    sentence = stutteranalyser("test")
-    # sentence.getSound()
+    sentence = stutteranalyser("sentence1")
+    sentence.getSound()
     sentence.statistics()
+    sentence.savestatistics()
+    # sentence.clearlogs()

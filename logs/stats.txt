@@ -1,0 +1,44 @@
+Name of Instance : 'sentence1' 
+Total number of words: 1.0 
+Number of LL words: 0.0 
+ LL ratio: 0.0 
+Name of Instance : 'sentence1' 
+Total number of words: 9.0 
+Number of LL words: 0.0 
+ LL ratio: 0.0 
+Name of Instance : 'sentence1' 
+Total number of words: 2.0 
+Number of LL words: 0.0 
+ LL ratio: 0.0 
+Name of Instance : 'sentence1' 
+Total number of words: 4.0 
+Number of LL words: 2.0 
+ LL ratio: 0.5 
+Name of Instance : 'sentence1' 
+Total number of words: 5.0 
+Number of LL words: 2.0 
+ LL ratio: 0.4 
+Name of Instance : 'sentence1' 
+Total number of words: 8.0 
+Number of LL words: 0.0 
+ LL ratio: 0.0 
+Name of Instance : 'sentence1' 
+Total number of words: 9.0 
+Number of LL words: 4.0 
+ LL ratio: 0.444444444444 
+Name of Instance : 'sentence1' 
+Total number of words: 7.0 
+Number of LL words: 5.0 
+ LL ratio: 0.714285714286 
+Name of Instance : 'sentence1' 
+Total number of words: 7.0 
+Number of LL words: 2.0 
+ LL ratio: 0.285714285714 
+Name of Instance : 'sentence1' 
+Total number of words: 14.0 
+Number of LL words: 0.0 
+ LL ratio: 0.0 
+Name of Instance : 'sentence1' 
+Total number of words: 7.0 
+Number of LL words: 5.0 
+ LL ratio: 0.714285714286 

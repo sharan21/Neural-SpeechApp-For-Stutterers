@@ -3,7 +3,6 @@
 Cleans the data by reducing it density, and trims each word to constant size
 Also implements exponential weighted average to smoothen the data.
 
-
 '''
 
 from import_words import importAllFromDir, plotAll
@@ -115,8 +114,6 @@ def printChunkSizeDiff(soundData, fixedSize = 200):
 if __name__ == "__main__":
 
     soundData, labels = importAllFromDir('../LL_chunks')
-
-
 
     soundData = reduceDensity(soundData)
 
