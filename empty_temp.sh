@@ -2,5 +2,4 @@
 
 cd tempchunks
 rm -rf *
-cd ../temp
-rm -rf *
+cd ..

@@ -28,7 +28,6 @@ class stutteranalyser():
     llratio = 0
     status = False
     llscore = 0
-
     instancename = ""
 
 
@@ -79,9 +78,9 @@ class stutteranalyser():
 
         print ("killing object '{}'".format(self.instancename))
 
-        subprocess.call("./modules/empty_temp.sh")
+        # subprocess.call("./modules/empty_temp.sh")
 
-        print ("emptied chunks from temp")
+        # print ("emptied chunks from temp")
 
 
     def statistics(self):
@@ -91,7 +90,9 @@ class stutteranalyser():
         classes = self.predict()
         self.wordcount = float(len(classes))
 
-        self.llcount = float(len([classes[i] for i in range(len(classes)) if(classes[i,0] < classes[i,1])]))
+        # self.llcount = float(len([classes[i] for i in range(len(classes)) if(classes[i,0] < classes[i,1])]))
+
+        self.llcount = float(len([classes[i] for i in range(len(classes)) if (classes[i, 1] > 0.75)]))
 
         self.nonllcount = self.wordcount - self.llcount
         self.llratio = self.llcount/self.wordcount
@@ -129,8 +130,9 @@ class stutteranalyser():
 
 if __name__ == '__main__':
 
-    sentence = stutteranalyser("sentence1")
-    sentence.getSound()
-    sentence.statistics()
-    sentence.savestatistics()
-    # sentence.clearlogs()
+
+        sentence = stutteranalyser("sentence1")
+        sentence.getSound()
+        sentence.statistics()
+        sentence.savestatistics()
+        sentence.clearlogs()
