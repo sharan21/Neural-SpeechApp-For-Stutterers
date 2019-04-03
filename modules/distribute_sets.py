@@ -18,14 +18,14 @@ def distribute(data, labels):
 
 
     traindata = data[0:split,:]
-    print traindata.shape
+    print (traindata.shape)
     trainlabel = labels[0:int(split),:]
-    print trainlabel.shape
+    print (trainlabel.shape)
 
     testdata = data[split:len(data), :]
-    print testdata.shape
+    print (testdata.shape)
     testlabel = labels[split:len(data), :]
-    print testlabel.shape
+    print (testlabel.shape)
 
     return traindata, trainlabel, testdata, testlabel
 

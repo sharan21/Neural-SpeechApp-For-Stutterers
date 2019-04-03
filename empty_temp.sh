@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-cd tempchunks
+cd ./tempchunks
 rm -rf *
 cd ..

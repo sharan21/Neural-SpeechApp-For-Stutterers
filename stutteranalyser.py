@@ -7,6 +7,14 @@ from modules.get_mfcc import librosaMfcc
 from modules.keras_test import loadandpredict
 from modules.normalize_data import normalizeSoundData
 
+
+
+def clearlogs():
+    print ("clearing logs...")
+
+    f = open("./logs/stats.txt", "w")
+    f.write("")
+
 class stutteranalyser():
 
     path = './tempsentences/test.wav'
@@ -78,9 +86,9 @@ class stutteranalyser():
 
         print ("killing object '{}'".format(self.instancename))
 
-        # subprocess.call("./modules/empty_temp.sh")
+        subprocess.call("./empty_temp.sh")
 
-        # print ("emptied chunks from temp")
+        print ("emptied chunks from temp")
 
 
     def statistics(self):
@@ -119,20 +127,32 @@ class stutteranalyser():
         f.write("")
 
 
-    def clearlogs(self):
-
-        print ("clearing logs...")
-
-        f = open("./logs/stats.txt", "w")
-        f.write("")
-
-
 
 if __name__ == '__main__':
 
 
-        sentence = stutteranalyser("sentence1")
-        sentence.getSound()
-        sentence.statistics()
-        sentence.savestatistics()
-        sentence.clearlogs()
+        sentence1 = stutteranalyser("sentence1")
+        sentence1.getSound()
+        sentence1.statistics()
+        sentence1.savestatistics()
+
+        del sentence1
+
+        sentence2 = stutteranalyser("sentence2")
+        sentence2.getSound()
+        sentence2.statistics()
+        sentence2.savestatistics()
+
+        del sentence2
+
+
+        # clearlogs()
+
+        # sentence3 = stutteranalyser("sentence3")
+        # sentence3.getSound()
+        # sentence3.statistics()
+        # sentence3.savestatistics()
+        # sentence3.clearlogs()
+        #
+        # del sentence3
+

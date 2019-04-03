@@ -1,0 +1,8 @@
+Name of Instance : 'sentence1' 
+Total number of words: 6.0 
+Number of LL words: 0.0 
+ LL ratio: 0.0 
+Name of Instance : 'sentence2' 
+Total number of words: 4.0 
+Number of LL words: 0.0 
+ LL ratio: 0.0 

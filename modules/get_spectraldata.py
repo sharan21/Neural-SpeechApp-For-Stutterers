@@ -34,8 +34,8 @@ def getTrainingData():
     for label in nonll_labels:
         final_labels.append(label)
 
-    print len(final_data)
-    print len(final_labels)
+    print (len(final_data))
+    print (len(final_labels))
 
 
 

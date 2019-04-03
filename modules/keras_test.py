@@ -156,7 +156,7 @@ def loadandpredict(pathtojson, pathtoh5, data):
 
     for instance in classes:
 
-        print instance
+        print (instance)
         print (parseinstance(instance))
 
     return classes

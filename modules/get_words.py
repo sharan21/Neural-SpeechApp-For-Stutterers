@@ -37,7 +37,9 @@ def startRecording(seconds = RECORD_SECONDS):
 
     stream.stop_stream()
     stream.close()
-    p.terminate()
+
+    # commented below code to prevent "cannot find default device error" when opened multiple times
+    # p.terminate()
 
     return frames
 
@@ -49,17 +51,17 @@ def detectnoiselevel(): # in dBFS
     storeWavFile(frames, './temp/noisetest.wav')
 
     data , _ = importAllFromDir('./temp')
-    print data.shape
+    print (data.shape)
     data = data[:,1000:]
 
-    print 20*math.log10(np.mean(data)/32767)
+    print (20*math.log10(np.mean(data)/32767))
 
 
 
 
 
 def storeWavFile(frames, filename, verbosity = True):
-    print file if verbosity else 0
+    print (file) if verbosity else 0
     waveFile = wave.open(filename, 'wb')
     waveFile.setnchannels(CHANNELS)
     waveFile.setsampwidth(p.get_sample_size(FORMAT))
@@ -131,11 +133,11 @@ def askUser():
         WAVE_OUTPUT_FILENAME = "../nonLL-sentences/output" + str(sentenceOffset) + ".wav"
         DEFAULT_CHUNKNAME = "../nonLL_chunks/chunk{}.wav"
         minimumWordSize = 300
-        print fileOffset
+        print (fileOffset)
 
 
     else:
-        print fileOffset
+        print (fileOffset)
         print("You are recording LL sentences...")
 
     return choice

@@ -54,7 +54,7 @@ def computeDistace(mfcc1, mfcc2):
 
     print("Finding DTW between the 2 mfccs")
     dist, cost, acc_cost, path = dtw(mfcc1.T, mfcc2.T, dist=lambda x, y: norm(x - y, ord=1))
-    print 'Normalized distance between the two sounds:', dist
+    print ('Normalized distance between the two sounds:', dist)
     plt.imshow(cost.T, origin='lower', cmap=plt.get_cmap('gray'), interpolation='nearest')
     plt.plot(path[0], path[1], 'w')
     plt.xlim((-0.5, cost.shape[0] - 0.5))
@@ -68,7 +68,7 @@ def padMfcc(mfcc, fixedsize = 30):
     diff = fixedsize - mfcc.shape[1]
     print (diff)
     for _ in range(diff):
-        print "running"
+        print ("running")
         np.vstack((mfcc, np.zeros(20)))
 
     print (mfcc.shape)
@@ -131,10 +131,10 @@ def getMfccDelta():
         # mfcc = average((findMfcc(path)))
         deltah = average(delta(findMfcc(path)))
         # temp = np.concatenate((deltah, mfcc))
-        print deltah
+        print (deltah)
         data.append(deltah)
 
-        print len(data[-1])
+        print (len(data[-1]))
 
     return np.array(data)
 
@@ -172,14 +172,14 @@ def getFinalNormalizedMfcc(): #shuffling occurs here
     # data = deltaplusmfcc()
     # data = getMfccSum()
     # data = getMfccDelta()
-    print data.size
+    print (data.size)
 
     normalizeSoundData(data)
 
 
     _, labels = getTrainingData()
 
-    print labels
+    print (labels)
 
     shuffle_in_unison_scary(data, labels)
 
@@ -228,7 +228,7 @@ def getMfccSum():
 
         data.append(sum(findMfcc(path)))
 
-        print len(data[-1])
+        print (len(data[-1]))
 
     return np.array(data)
 
@@ -253,9 +253,9 @@ if __name__ == '__main__':
 
 
     data, labels = getFinalNormalizedMfcc()
-    print data[1:10, :]
-    print data.size
-    print type(data)
+    print (data[1:10, :])
+    print (data.size)
+    print (type(data))
     # print data[500:,:]
 
     # deltaplusmfcc()

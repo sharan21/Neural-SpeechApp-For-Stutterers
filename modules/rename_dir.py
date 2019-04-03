@@ -11,7 +11,7 @@ def rename(path):
 
     list = absoluteFilePaths(path)
 
-    print list
+    print (list)
     i = 1
 
     for filename in list:
