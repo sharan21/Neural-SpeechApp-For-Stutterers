@@ -172,7 +172,6 @@ def getFinalNormalizedMfcc(): #shuffling occurs here
     # data = deltaplusmfcc()
     # data = getMfccSum()
     # data = getMfccDelta()
-    print (data.size)
 
     normalizeSoundData(data)
 
@@ -248,19 +247,24 @@ if __name__ == '__main__':
     # nonllmfcc, llmfcc = librosaMFCC(nonllpath, llpath)
     # average(llmfcc)
 
+    a = []
+
+    for i in range(5):
+        temp = findMfcc('../nonLL_chunks/chunk{}.wav'.format(i+1))
+        np.savetxt('nonll{}.csv'.format(i+1), temp)
+
+
     # plotMfcc(nonllmfcc, llmfcc)
     # computeDistace(nonllmfcc, llmfcc)
 
 
-    data, labels = getFinalNormalizedMfcc()
-    print (data[1:10, :])
-    print (data.size)
-    print (type(data))
-    # print data[500:,:]
-
-    # deltaplusmfcc()
-
-
+    # data, labels = getFinalNormalizedMfcc()
+    # print (data[1:10, :])
+    # print (data.size)
+    # print (type(data))
+    # # print data[500:,:]
+    #
+    # # deltaplusmfcc()
 
 
 

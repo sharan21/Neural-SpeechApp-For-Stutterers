@@ -1,1 +1,1 @@
-from speechApp.modules import *
+from modules import *

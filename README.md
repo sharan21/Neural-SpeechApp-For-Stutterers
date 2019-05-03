@@ -3,6 +3,9 @@ Monitors speech in real time and provides feedback to stammerer, based on featur
 # Refer Report 
 Speech-Assisting-App/documentation/project-synopsis.pdf 
 
+#Watch a demonstration of the initial app
+https://www.youtube.com/watch?v=NltYqegNrYE
+
 # Idea and Working
 Based on a technique used to attain fluency in stressfull situations called the "Long lengthning style", developed by Partha Bagchi, a mentor of mine and speech pathologist.
 This technique essentially has 3 features:
@@ -13,6 +16,9 @@ This technique essentially has 3 features:
 All these 3 features can be monitored and fed to a tf graph and the output can be determined as 1 (proper technique used) or 0 (improper technique used).
 
 If the proper technique is used, these is a very low chance that disfluency can occur. Thus this app makes sure that person is conscious of using the prescribed technique in the proper manner, alleviating stress in stressfull speaking situations. 
+
+#Refer to my Paper
+JournalPaper.pdf
 
 # Instructions to use modules for input pipeline
 refer file "instructions" in main dir.

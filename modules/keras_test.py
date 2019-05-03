@@ -189,11 +189,11 @@ if __name__ == '__main__':
     y_train = to_categorical(y_train)
     y_test = to_categorical(y_test)
 
-    pathtojson = './models/average9.json'
-    pathtoh5 = './models/average9.h5'
+    pathtojson = './models/average10.json'
+    pathtoh5 = './models/average10.h5'
 
 
-    # trainmodel(pathtojson, pathtoh5)
+    trainmodel(pathtojson, pathtoh5)
 
     testmodel(pathtojson, pathtoh5, data, labels)
 
