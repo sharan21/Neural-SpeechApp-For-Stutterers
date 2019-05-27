@@ -28,9 +28,6 @@ def rename(path):
         i = i+1
 
 
-
-
-
 if __name__ == '__main__':
 
     rename(path)

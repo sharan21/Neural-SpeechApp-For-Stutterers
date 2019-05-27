@@ -7,12 +7,13 @@ Only implemented for single path, single MFCC extraction and does not automatica
 
 import numpy as np
 import os
+from numpy.linalg import norm
 import librosa.display
 from get_spectraldata import *
 import matplotlib.pyplot as plt
-import dtw
 from normalize_data import normalizeSoundData
 from import_words import shuffle_in_unison_scary
+from dtw import dtw
 
 pre_emphasis = 0.97
 frame_size = 0.025
@@ -59,6 +60,8 @@ def computeDistace(mfcc1, mfcc2):
     plt.plot(path[0], path[1], 'w')
     plt.xlim((-0.5, cost.shape[0] - 0.5))
     plt.ylim((-0.5, cost.shape[1] - 0.5))
+    plt.xlabel('MFCC Column Index (FET)')
+    plt.ylabel('MFCC Column Index (Non-FET)')
     plt.show()
 
 def padMfcc(mfcc, fixedsize = 30):
@@ -110,7 +113,7 @@ def getndimMfcc(): # return average of all mfccs for each word
         print ("finding mfcc of", path)
 
         data.append(findMfcc(path))
-        print len(data[-1])
+        print(len(data[-1]))
 
     return np.array(data)
 
@@ -247,11 +250,18 @@ if __name__ == '__main__':
     # nonllmfcc, llmfcc = librosaMFCC(nonllpath, llpath)
     # average(llmfcc)
 
-    a = []
+    # a = []
+    #
+    # for i in range(5):
+    #     temp = findMfcc('../nonLL_chunks/chunk{}.wav'.format(i+1))
+    #     np.savetxt('nonll{}.csv'.format(i+1), temp)
 
-    for i in range(5):
-        temp = findMfcc('../nonLL_chunks/chunk{}.wav'.format(i+1))
-        np.savetxt('nonll{}.csv'.format(i+1), temp)
+    mfcc1 = findMfcc('../tempsentences/fox.wav')
+    mfcc2 = findMfcc('../tempsentences/foxn.wav')
+    print(mfcc1.shape)
+    print(mfcc2.shape)
+    computeDistace(mfcc1, mfcc2)
+
 
 
     # plotMfcc(nonllmfcc, llmfcc)

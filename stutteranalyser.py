@@ -6,6 +6,7 @@ import subprocess
 from modules.get_mfcc import librosaMfcc
 from modules.keras_test import loadandpredict
 from modules.normalize_data import normalizeSoundData
+from modules.import_words import getNumberOfFiles
 
 def clearlogs():
     print ("clearing logs...")
@@ -14,9 +15,6 @@ def clearlogs():
 
 class stutteranalyser():
 
-
-
-
     def __init__(self, name = 'defaultname', duration = 8):
 
         # print ("init running")
@@ -24,6 +22,7 @@ class stutteranalyser():
         self.totalduration = duration
         self.path = './tempsentences/{}.wav'.format(self.instancename)
         self.pathforchunks = './tempchunks'
+        self.fileoffset = getNumberOfFiles(self.pathforchunks)
 
         self.pathtomodeljson = './modules/models/average9.json'
         self.pathtomodelh5 = './modules/models/average9.h5'
@@ -33,7 +32,6 @@ class stutteranalyser():
         self.pausedurations = []
 
         self.wordcount = 0.0
-        self.sentencecount = 0.0
         self.totalsilence = 0.0
         self.llcount = 0.0
         self.nonllcount = 0
@@ -45,7 +43,6 @@ class stutteranalyser():
         self.instancename = ""
 
         self.mfcc = []
-
 
     def getSound(self):
 
@@ -62,7 +59,7 @@ class stutteranalyser():
             if (checkChunk(chunk,i, 50, 3000) or i == 0):  #
                 continue
 
-            out_file = "./tempchunks/{}chunk{}.wav".format(self.instancename, i)
+            out_file = "./tempchunks/chunk{}.wav".format(i+self.fileoffset)
             # print ("exporting", out_file)
             chunk.export(out_file, format="wav")
 
@@ -80,6 +77,8 @@ class stutteranalyser():
         classes = loadandpredict(self.pathtomodeljson, self.pathtomodelh5, data)
 
         return classes
+
+
 
 
     def __del__(self):
@@ -100,7 +99,7 @@ class stutteranalyser():
 
         # self.llcount = float(len([classes[i] for i in range(len(classes)) if(classes[i,0] < classes[i,1])]))
 
-        self.llcount = float(len([classes[i] for i in range(len(classes)) if (classes[i, 1] > 0.6)]))
+        self.llcount = float(len([classes[i] for i in range(len(classes)) if (classes[i, 1] > 0.5)]))
 
         self.nonllcount = self.wordcount - self.llcount
         self.llratio = self.llcount/self.wordcount
@@ -134,6 +133,8 @@ if __name__ == '__main__':
 
     i = 0
 
+
+
     while True:
 
         i = i+1
@@ -144,7 +145,14 @@ if __name__ == '__main__':
 
         subprocess.call('./empty_temp.sh')
 
+        #to stop at 10 words
+        if(getNumberOfFiles(path = './tempchunks') > 200):
+            print("you have finished recording 10 words")
+            break
+
         del sentence
+
+    print("Done!")
 
 
 

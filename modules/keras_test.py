@@ -8,8 +8,6 @@ from keras import regularizers
 from keras import optimizers
 log_dir = './logs'
 
-
-
 def makemodel():
 
     print ("Making model")
@@ -58,9 +56,9 @@ def makemodel2():
 
     model.add(Dense(units=20, activation='relu', input_dim=20))
     model.add(Dropout(0.3))
-    model.add(Dense(units=80, activation='relu'))
+    model.add(Dense(units=80, activation='relu')) (20,80)
     model.add(Dropout(0.3))
-    model.add(Dense(units=40, activation='relu'))
+    model.add(Dense(units=40, activation='relu')) (80,40)
     model.add(Dropout(0.3))
     model.add(Dense(units=20, activation='relu'))
     model.add(Dropout(0.3))
@@ -115,12 +113,25 @@ def testmodel(pathtojson, pathtoh5, data, labels ):
     loaded_model.compile(loss='categorical_crossentropy',
                          optimizer='adam',
                          metrics=['accuracy'])
-    print data.shape
+    print(data.shape)
 
     labels = to_categorical(labels)
     score, acc = loaded_model.evaluate(data, labels, batch_size=16)
     print ("Scores for Test set: {}".format(score))
     print ("Accuracy for Test set: {}".format(acc))
+
+
+def loadmodel(pathtojson, pathtoh5):
+
+    json_file = open(pathtojson, 'r')
+    loaded_model_json = json_file.read()
+    json_file.close()
+    loaded_model = model_from_json(loaded_model_json)
+
+    loaded_model.load_weights(pathtoh5)
+
+    return loaded_model
+
 
 
 
@@ -162,12 +173,47 @@ def loadandpredict(pathtojson, pathtoh5, data):
     return classes
 
 
-
-
 # model.train_on_batch(x_batch, y_batch)
 
 def parseinstance(instance):
     return "ll" if instance[1]>instance[0] else "nonll"
+
+def getweightscore(model):
+    weightscore = np.identity(20)
+
+    for layer in model.layers:
+        print("trying")
+        weights = layer.get_weights()  # list of numpy arrays
+        if(len(weights)==2):
+            print("if")
+            weights.pop()
+            print(np.shape(weights[0]))
+            weightscore = np.dot(weightscore, weights[0])
+        else:
+            continue
+
+
+    print("weight score is {}".format(weightscore))
+
+    ranking = [e[0]+e[1] for e in weightscore]
+    print("ranking matrix is {}".format(ranking))
+
+
+
+
+
+
+    # for layer in model.layers:
+    #     print("trying")
+    #
+    #     weights = layer.get_weights()  # list of numpy arrays
+    #     if(len(weights)==2):
+    #         print(weights[0])
+    #     else:
+    #         print("problem")
+
+
+
 
 
 if __name__ == '__main__':
@@ -175,29 +221,39 @@ if __name__ == '__main__':
     print("hello")
 
     data, labels = getFinalNormalizedMfcc()
-    print data.shape
-    print type(data)
-    print labels.shape
-    print type(labels)
+    # print data.shape
+    # print type(data)
+    # print labels.shape
+    # print type(labels)
 
     x_train, y_train, x_test, y_test = distribute(data, labels)
-    print x_train.shape
-    print y_train.shape
-    print x_test.shape
-    print y_test.shape
+    # print x_train.shape
+    # print y_train.shape
+    # print x_test.shape
+    # print y_test.shape
 
     y_train = to_categorical(y_train)
     y_test = to_categorical(y_test)
 
     pathtojson = './models/average10.json'
     pathtoh5 = './models/average10.h5'
-
-
-    trainmodel(pathtojson, pathtoh5)
-
-    testmodel(pathtojson, pathtoh5, data, labels)
+    #
+    #
+    # trainmodel(pathtojson, pathtoh5)
+    #
+    # testmodel(pathtojson, pathtoh5, data, labels)
 
     # loadandpredict('./model.json','./model.h5',data)
+
+    model = loadmodel(pathtojson, pathtoh5)
+    getweightscore(model)
+
+    # print(w)
+    # print(len(w))
+    # print(type(w))
+    # print(w.shape)
+
+
 
 
 
