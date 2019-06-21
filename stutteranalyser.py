@@ -146,7 +146,7 @@ if __name__ == '__main__':
         subprocess.call('./empty_temp.sh')
 
         #to stop at 10 words
-        if(getNumberOfFiles(path = './tempchunks') > 200):
+        if(getNumberOfFiles(path = './tempchunks') > 10):
             print("you have finished recording 10 words")
             break
 
