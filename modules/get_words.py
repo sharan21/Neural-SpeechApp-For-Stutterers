@@ -48,9 +48,9 @@ def detectnoiselevel(): # in dBFS
     print ("detecting noise level...")
     print ("recording for 5 seconds")
     frames = startRecording(5)
-    storeWavFile(frames, './temp/noisetest.wav')
+    storeWavFile(frames, './noise/noisetest.wav')
 
-    data , _ = importAllFromDir('./temp')
+    data , _ = importAllFromDir('./noise')
     print (data.shape)
     data = data[:,1000:]
 
