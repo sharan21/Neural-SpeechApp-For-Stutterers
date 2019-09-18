@@ -122,7 +122,7 @@ class stutteranalyser():
         # f.write("Number of LL words: {} \n ".format(self.llcount))
         #
         # f.write("LL ratio: {} \n".format(self.llratio))
-        #
+
         # f.write("")
 
         f.write("{} {} {} {} {} {}\n".format(self.instancename, self.wordcount, self.llcount, self.llratio, self.status, self.speed))
@@ -130,10 +130,7 @@ class stutteranalyser():
 if __name__ == '__main__':
 
     clearlogs()
-
     i = 0
-
-
 
     while True:
 
@@ -142,10 +139,7 @@ if __name__ == '__main__':
         sentence.getSound()
         sentence.buildstatistics()
         sentence.savestatistics()
-
         subprocess.call('./empty_temp.sh')
-
-
         # del sentence
 
     print("Done!")
