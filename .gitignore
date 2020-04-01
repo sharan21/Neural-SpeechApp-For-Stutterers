@@ -6,5 +6,5 @@ nonLL_chunks
 *.pyc
 *.wav
 .idea
-
+*.txt
 

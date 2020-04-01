@@ -1,12 +1,12 @@
-from modules.get_words import startRecording, storeWavFile, checkChunk
+from get_words import startRecording, storeWavFile, checkChunk
 from pydub import AudioSegment
 from pydub.silence import split_on_silence
-from modules.get_mfcc import absoluteFilePaths
+from get_mfcc import absoluteFilePaths
 import subprocess
-from modules.get_mfcc import librosaMfcc
-from modules.keras_test import loadandpredict
-from modules.normalize_data import normalizeSoundData
-from modules.import_words import getNumberOfFiles
+from get_mfcc import librosaMfcc
+from keras_test import loadandpredict
+from normalize_data import normalizeSoundData
+from import_words import getNumberOfFiles
 
 def clearlogs():
     print ("clearing logs...")
@@ -24,8 +24,8 @@ class stutteranalyser():
         self.pathforchunks = './tempchunks'
         self.fileoffset = getNumberOfFiles(self.pathforchunks)
 
-        self.pathtomodeljson = './modules/models/average9.json'
-        self.pathtomodelh5 = './modules/models/average9.h5'
+        self.pathtomodeljson = './models/average9.json'
+        self.pathtomodelh5 = './models/average9.h5'
 
         self.frames = []
 

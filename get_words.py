@@ -15,10 +15,6 @@ RECORD_SECONDS = 10
 minimumWordSize = 300  # if the size of the word is <= this, reject the chunk
 maximumWordSize = 2000
 
-
-
-
-
 def startRecording(seconds = RECORD_SECONDS):
     frames = []
 
@@ -61,7 +57,7 @@ def detectnoiselevel(): # in dBFS
 
 
 def storeWavFile(frames, filename, verbosity = True):
-    print (file) if verbosity else 0
+    print (filename) if verbosity else 0
     waveFile = wave.open(filename, 'wb')
     waveFile.setnchannels(CHANNELS)
     waveFile.setsampwidth(p.get_sample_size(FORMAT))
@@ -70,7 +66,6 @@ def storeWavFile(frames, filename, verbosity = True):
     waveFile.close()
 
     # print ("Done recording, stored in output.wav") if verbosity else 0
-
 
 
 def splitWavFileAndStore(filename, minsillen= 100, silthresh = -60):
@@ -143,11 +138,7 @@ def askUser():
     return choice
 
 
-
-
 if __name__ == '__main__':
-
-
 
     # fileOffset = getNumberOfFiles()  # makes sure that old chunks are not re-written
     # sentenceOffset = getNumberOfSentences()  # makes sure that old sentences are not re-written
@@ -165,8 +156,6 @@ if __name__ == '__main__':
     # frames = startRecording(RECORD_SECONDS) # get frames from user
     # storeWavFile(frames, WAVE_OUTPUT_FILENAME)
     # splitWavFileAndStore(WAVE_OUTPUT_FILENAME)
-
-
 
     detectnoiselevel()
 
