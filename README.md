@@ -17,9 +17,9 @@ It is know that generally while following these techniques, the degree of fluenc
 pip3 install requirements.txt
 
 # Usage
-cd ~/Speech-Assisting-App
-sudo ./openapp.sh
-On the web page that opens, choose the log file './logs/stats.txt' and click 'Run'
+cd ~/Speech-Assisting-App <br/>
+sudo ./openapp.sh <br/>
+On the web page that opens, choose the log file './logs/stats.txt' and click 'Run' <br/>
 
 For optimal results, use earphones with a good quality inbuilt mic and use in a noiseless enviroment (such as while doing a presenation)
 
