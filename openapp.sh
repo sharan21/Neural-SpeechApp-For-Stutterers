@@ -3,18 +3,18 @@
 
 # We are running from sharan/Desktop
 
-cd ~
 
-cd ./speechappserver
+cd ./speech-app-display
 open ./index.html
 
 echo "opened app interface on chrome..."
 
-cd ../speechApp
+cd ..
+ls
 
 echo "Running speechanalyser.py..."
 
-python2 "./stutteranalyser.py"
+python3 "./stutteranalyser.py"
 
 
 
